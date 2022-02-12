@@ -1,0 +1,12 @@
+html {
+  --color-accent-dark: red;
+  --color-accent-light: pink;
+  --color-primary-dark: green;
+  --color-primary-light: olive;
+  --color-white-1: white;
+  --color-white-2: white;
+  --color-white-3: white;
+  --color-white-4: white;
+  --color-gray-dark: black;
+  --color-gray-light: rgb(17, 14, 14);
+}
