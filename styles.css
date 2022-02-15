@@ -1,13 +1,37 @@
+@import "Resets/normalize.css";
+@import "Resets/reset.css";
+@import "typography.css";
+
+html {
+  font-family: 'Libre', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+  font-family: 'Libre', Georgia, 'Times New Roman', Times, serif;
+}
+
+main{
+  margin: 5vw 15vw;
+}
+
+h2, h3, h4, h5 {
+  color: var(--color-gray-dark)
+}
+
+p {
+  color: var(--color-gray-light)
+}
+
 h1 {
   font-size: 86px;
   font-weight: 300;
+  color: var(--color-text-white-dark)
 }
+
 h2 {
   font-size: 56px;
   font-weight: 300;
 }
+
 h3 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 300;
 }
 
