@@ -12,4 +12,6 @@ html {
   --color-gray-light: #3A3B36;
   --color-text-white-light: var(--color-white-1);
   --color-text-white-dark: var(--color-white-2);
+  --mx-sm: 10vw;
+  --mx-bg: 15vw;
 }
