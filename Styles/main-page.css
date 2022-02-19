@@ -1,8 +1,8 @@
-#showcase {
+#showcase-section {
   height: 100vh;
 }
 
-#utilities-section {
+/* #utilities-section {
   height: 100vh;
 }
 
@@ -16,16 +16,13 @@
 
 #rooms-section {
   height: 100vh;
-}
+}  */
 
 #contact-general-info {
-
 }
 
 #contact-additional-info {
-
 }
 
 #contact-form {
-
 }

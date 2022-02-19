@@ -1,49 +1,150 @@
 @import "Resets/normalize.css";
 @import "Resets/reset.css";
-@import "typography.css";
-@import "variables.css";
-@import "nav.css";
-@import "footer.css";
+@import "Styles/typography.css";
+@import "Styles/variables.css";
+@import "Styles/buttons.css";
+@import "Styles/nav.css";
+@import "Styles/footer.css";
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 html {
-  font-family: 'Libre', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
-  font-family: 'Libre', Georgia, 'Times New Roman', Times, serif;
+  font-family: "Libre", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    serif;
+  font-family: "Libre", Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-main{
-  margin: 5vw var(--mx-bg);
+body {
+  background-color: var(--color-white-2);
 }
 
-h2, h3, h4, h5 {
-  color: var(--color-gray-dark)
+main {
+  width: 100%;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: var(--color-gray-dark);
+  margin-bottom: 0.8em;
 }
 
 p {
-  color: var(--color-gray-light)
+  color: var(--color-gray-light);
+  font-size: 1rem;
 }
 
 h1 {
-  font-size: 86px;
+  font-size: 5rem;
   font-weight: 300;
-  color: var(--color-text-white-dark)
+  color: var(--color-text-white-dark);
 }
 
 h2 {
-  font-size: 56px;
+  font-size: 3.5rem;
   font-weight: 300;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 300;
 }
 
 h4 {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 300;
 }
 
 h5 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 300;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  /* height: 100vh; */
+  padding: 16vh var(--mx-bg);
+}
+
+.home-section__description {
+  text-align: justify;
+  font-size: 1.3rem;
+  line-height: 1.6em;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Rooms section */
+
+#rooms-section {
+  background-color: var(--color-white-3);
+}
+
+/* Utilities section */
+
+#utilities-section {
+  border: 1px gray solid;
+}
+
+/* Attractions section */
+
+#attractions-section {
+  border: 1px gray solid;
+}
+
+#attractions-section .img-container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  margin-left: var(--mx-bg-neg);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+#attractions-section img {
+  height: 20rem;
+  /* width: auto; */
+}
+
+/* Showcase section */
+
+#showcase-section {
+  padding-top: 16rem;
+  /* position: relative; */
+}
+
+.bg-img {
+  height: 85vh;
+  width: 100vw;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(./Assets/Images/mountains_showcase_1920.jpg) no-repeat top;
+  background-size: cover;
+}
+
+header h2,
+header h4 {
+  color: var(--color-text-white-dark);
+  margin-bottom: 0.1em;
+}
+
+header h2 {
+  text-transform: uppercase;
 }
