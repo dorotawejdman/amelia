@@ -43,15 +43,109 @@
           Zapraszamy do wolnostojącego domu Amelia z dużym, zielonym ogrodem
           położonym nad rzeką Grajcarek
         </p>
-        <div class="utility">
-          <div class="circle-icon">
-            <h5 class="utility__header">Pokoje</h5>
+        <div class="utilities-container">
+          <div class="utility">
+            <div class="utility__header">          
+              <div class="circle-icon-container">
+                <img src="./Assets/Icons/icons8-bed-50.png" alt="bed icon" class="circle-icon smaller-icon "></img>
+              </div>
+              <h5>Pokoje</h5>
+            </div>
             <p class="utility__description">
               Oferujemy Gościom pokoje dwu, trzy, cztero-osobowe o powierzchni
               od 20 do 25 m2.
             </p>
           </div>
+          <div class="utility">
+            <div class="utility__header">          
+              <div class="circle-icon-container">
+                <img src="./Assets/Icons/icons8-cooking-pot-50-2.png" alt="cooking icon" class="circle-icon smaller-icon "></img>
+              </div>
+              <h5>Kuchnie i łazienki</h5>
+            </div>
+            <p class="utility__description">
+              Każdy pokój posiada własną łazienkę i aneks kuchenny z pełnym wyposażeniem.
+            </p>
+          </div>
+          <div class="utility">
+            <div class="utility__header">          
+              <div class="circle-icon-container">
+                <img src="./Assets/Icons/icons8-weber-50.png" alt="grill icon" class="circle-icon"></img>
+              </div>
+              <h5>Grill</h5>
+            </div>
+            <p class="utility__description">
+              Na działce możliwość grillowania. Wyjście z działki wprost nad rzekę Grajcarek. 
+            </p>
+          </div>
+          <div class="utility">
+            <div class="utility__header">          
+              <div class="circle-icon-container">
+                <img src="./Assets/Icons/icons8-balcony-50.png" alt="balcony icon" class="circle-icon"></img>
+              </div>
+              <h5>Balkony</h5>
+            </div>
+            <p class="utility__description">
+              Pokoje na parterze posiadają tarasy, a na piętrze wydzielone balkoniki lub loggia.
+            </p>
+          </div>
+          <div class="utility">
+            <div class="utility__header">          
+              <div class="circle-icon-container">
+                <img src="./Assets/Icons/icons8-car-50.png" alt="car icon" class="circle-icon"></img>
+              </div>
+              <h5>Parking</h5>
+            </div>
+            <p class="utility__description">
+              Na posesji miejsce postojowe dla każdego pokoju. Działka posiada dobry dojazd, jest ogrodzona. 
+            </p>
+          </div>
+          <div class="utility">
+            <div class="utility__header">          
+              <div class="circle-icon-container">
+                <img src="./Assets/Icons/icons8-shop-50.png" alt="shop icon" class="circle-icon"></img>
+              </div>
+              <h5>Sklepy i restauracje</h5>
+            </div>
+            <p class="utility__description">
+              Niedaleko domu są: centrum miasta, dworzec PKS, sklepy. jadłodajnia "Łęg" oraz karczma "U Polowacy".
+            </p>
+          </div>
+          <div class="utility">
+            <div class="utility__header">          
+              <div class="circle-icon-container">
+                <img src="./Assets/Icons/icons8-skiing-50.png" alt="skiing icon" class="circle-icon"></img>
+              </div>
+              <h5>Stoki</h5>
+            </div>
+            <p class="utility__description">
+              W pobliżu wyciągi narciarskie, zespół rekreacyjno - sportowy.
+            </p>
+          </div>
+          <div class="utility">
+            <div class="utility__header">          
+              <div class="circle-icon-container">
+                <img src="./Assets/Icons/icons8-kayaking-50.png" alt="kayaking icon" class="circle-icon"></img>
+              </div>
+              <h5>Atrakcje</h5>
+            </div>
+            <p class="utility__description">
+              W okolicy znajdują się liczne trasy turystyczno-rowerowe, końcowa stacja spływu Dunajcem. 
+            </p>
+          </div>
+          <div class="utility">
+            <div class="utility__header">          
+              <div class="circle-icon-container">
+                <img src="./Assets/Icons/icons8-weber-50.png" alt="grill icon" class="circle-icon"></img>
+              </div>
+              <h5>Grill</h5>
+            </div>
+            <p class="utility__description">
+              Na działce możliwość grillowania. Wyjście z działki wprost nad rzekę Grajcarek. 
+            </p>
+          </div>
         </div>
+        
       </section>
       <section class="home-section" id="rooms-section">
         <h3 class="home-section__header">Nasze pokoje</h3>
@@ -75,14 +169,16 @@
             </p>
           </div>
         </div>
-        <button class="btn btn--accent-dark center">Galeria</button>
+        <div class="btn-container">
+          <button class="btn btn--accent-dark center">Galeria</button>
+        </div>
       </section>
       <section class="home-section" id="attractions-section">
         <h3 class="home-section__header">Atrakcje Szczawnicy</h3>
         <div class="img-container">
-          <img src="./Assets/Images/e_mountain_1280.png" alt="Chodzenie po górach" />
-          <img src="./Assets/Images/e_bicycle_1280.png" alt="Wycieczka rowerowa w górach" />
-          <img src="./Assets/Images/e-marina.png" alt="Spływ kajakowy" />
+          <img src="./Assets/Images/e_mountain_1280.png" alt="Chodzenie po górach" class="attractions__img"/>
+          <img src="./Assets/Images/e_bicycle_1280.png" alt="Wycieczka rowerowa w górach" class="attractions__img"/>
+          <img src="./Assets/Images/e-marina.png" alt="Spływ kajakowy" class="attractions__img"/>
         </div>
         <p class="home-section__description attraction-description">
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -99,10 +195,35 @@
           scrambled it to make a type specimen book. It has survived not only
           five centurie.
         </p>
-        <div class="circle-icon">
-          <p class="">Rezerwaty przyrody</p>
+        <div class="flex">
+          <div class="attraction__label">          
+            <div class="circle-icon-container">
+              <img src="./Assets/Icons/icons8-forest-50.png" alt="forest icon" class="circle-icon"></img>
+            </div>
+            <p class="attraction-label__name">Rezerwaty Przyrody</p>
+          </div>
+          <div class="attraction__label">          
+            <div class="circle-icon-container">
+              <img src="./Assets/Icons/icons8-mountain-50.png" alt="mountains icon" class="circle-icon"></img>
+            </div>
+            <p class="attraction-label__name">Szlaki turystyczne</p>
+          </div>
+          <div class="attraction__label">          
+            <div class="circle-icon-container">
+              <img src="./Assets/Icons/icons8-cable-car-50.png" alt="cable car icon" class="circle-icon"></img>
+            </div>
+            <p class="attraction-label__name">Kolejka krzesełkowa</p>
+          </div>
+          <div class="attraction__label">          
+            <div class="circle-icon-container">
+              <img src="./Assets/Icons/icons8-kayaking-50.png" alt="kayaking icon" class="circle-icon"></img>
+            </div>
+            <p class="attraction-label__name">Spływ Dunajcem</p>
+          </div>
         </div>
-        <button class="btn btn--accent-dark center">Więcej</button>
+        <div class="btn-container">
+          <button class="btn btn--accent-dark center">Więcej</button>
+        </div>
       </section>
       <section class="home-section" id="contact-section">
         <section id="contact-general-info">
@@ -148,12 +269,16 @@
           Idealny wypoczynek dla osób indywidualnych oraz grup zorganizowanych.
         </p>
       </div>
-      <menu class="nav_menu">
+      <menu class="nav__menu">
         <ul>
           <li class="nav-menu__link"><a href="">Główna</a></li>
+          <div class="decor"></div>
           <li class="nav-menu__link"><a href="">Oferta</a></li>
+          <div class="decor"></div>
           <li class="nav-menu__link"><a href="">Galeria</a></li>
+          <div class="decor"></div>
           <li class="nav-menu__link"><a href="">Atrakcje</a></li>
+          <div class="decor"></div>
           <li class="nav-menu__link"><a href="">Kontakt</a></li>
         </ul>
       </menu>
@@ -165,8 +290,28 @@
       <hr />
       <address class="footer-contact-info">
         <div class="contact-info--small">
-          <img src="" alt="Ikona telefonu" class="contact-info__icon"/>
+          <img src="./Assets/Icons/icons8-phone-50.png" alt="Ikona telefonu" class="contact-info__icon"/>
           <p class="contact-info__content">18 262 11 29</p>
+        </div>
+        <div class="contact-info--small">
+          <img src="./Assets/Icons/icons8-location-50.png" alt="Ikona telefonu" class="contact-info__icon"/>
+          <p class="contact-info__content"> ul. Nad Grajcarkiem 10 Szczawnica</p>
+        </div>
+        <div class="contact-info--small">
+          <img src="./Assets/Icons/icons8-mail-50.png" alt="Ikona telefonu" class="contact-info__icon"/>
+          <p class="contact-info__content"> amelianadgrajcarkiem@gmail.com  </p>
+        </div>
+        <div class="contact-info--small">
+          <img src="./Assets/Icons/icons8-form-50.png" alt="Ikona telefonu" class="contact-info__icon"/>
+          <p class="contact-info__content">Formularz kontaktowy </p>
+        </div>
+        <div class="contact-info--small">
+          <img src="./Assets/Icons/icons8-facebook-50.png" alt="Ikona telefonu" class="contact-info__icon"/>
+          <p class="contact-info__content">Facebook</p>
+        </div>
+        <div class="contact-info--small">
+          <img src="./Assets/Icons/icons8-bed-50.png" alt="Ikona telefonu" class="contact-info__icon"/>
+          <p class="contact-info__content">Nocowanie.pl</p>
         </div>
       </address>
     </footer>

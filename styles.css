@@ -78,6 +78,14 @@ section {
   padding: 16vh var(--mx-bg);
 }
 
+.decor {
+  background-color: var(--color-primary-dark);
+  border-radius: 1px;
+  transform: rotate(45deg);
+  height: 0.4rem;
+  width: 0.4rem;
+}
+
 .home-section__description {
   text-align: justify;
   font-size: 1.3rem;
@@ -101,6 +109,58 @@ section {
   border: 1px gray solid;
 }
 
+.utilities-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 3rem 5rem;
+  margin-top: 4rem;
+}
+.utility {
+  /* margin: 1rem 0rem; */
+}
+
+.circle-icon-container {
+  background-color: var(--color-primary-dark);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-icon {
+  width: 60%;
+  height: 60%;
+  background-size: contain;
+}
+
+.smaller-icon {
+  width: 54%;
+  height: 54%;
+}
+
+.utility__header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.utility__header h5 {
+  margin-bottom: 0;
+  margin-left: 0.8rem;
+  color: var(--color-primary-dark);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.utility__description {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+}
+
 /* Attractions section */
 
 #attractions-section {
@@ -116,11 +176,29 @@ section {
   margin-bottom: 3rem;
 }
 
-#attractions-section img {
+#attractions__img {
   height: 20rem;
   /* width: auto; */
 }
 
+.attraction__label {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.attraction-label__name {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /* Showcase section */
 
 #showcase-section {
