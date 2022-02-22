@@ -21,6 +21,18 @@ html {
   overflow-x: hidden;
 }
 
+@media (min-width:1660px){
+  html{
+    font-size: 17px;
+  }
+}
+
+@media (min-width:1920px){
+  html{
+    font-size: 20px;
+  }
+}
+
 body {
   background-color: var(--color-white-2);
 }
@@ -84,6 +96,11 @@ section {
   transform: rotate(45deg);
   height: 0.4rem;
   width: 0.4rem;
+}
+
+.home-section__header{
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .home-section__description {
@@ -202,7 +219,7 @@ section {
 /* Showcase section */
 
 #showcase-section {
-  padding-top: 16rem;
+  padding-top: 35vh;
   /* position: relative; */
 }
 
@@ -225,4 +242,80 @@ header h4 {
 
 header h2 {
   text-transform: uppercase;
+}
+
+
+/* Contact section */
+
+#contact-general-info, #contact-additional-info{
+  text-align: center;
+
+}
+
+#contact-section  .home-section__description{
+  text-align: center;
+  font-size: 1rem;
+}
+
+#contact-section  {
+  background-color: var(--color-white-3);
+}
+
+#contact-additional-info {
+  background-color: var(--color-white-5);
+  margin-left: var(--mx-bg-neg);
+  margin-right: var(--mx-bg-neg);
+}
+
+.additional-info__title {
+  color: var(--color-primary-dark);
+  margin-top: 2rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.additional-info__content {
+  font-size: 1.2em;
+}
+
+#hotel-hours {
+  font-weight: 600;
+}
+
+.contact-info-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.contact-info {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.contact-info * {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;  
+}
+
+#contact-phone {
+  width: 15ch;
+  text-align: center;
+  margin-left: 0;
+}
+
+.contact-info__type {
+
+}
+
+.contact-info__content {
+
+}
+
+#contact-form .section-header-small {
+  text-align: center;
 }
