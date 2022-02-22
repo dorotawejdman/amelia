@@ -1,28 +1,228 @@
+/* Common */
+
+.home-section__header {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-section__description {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.6em;
+}
+
+/* Showcase section */
+
 #showcase-section {
+  padding-top: 35vh;
   height: 100vh;
 }
 
-/* #utilities-section {
-  height: 100vh;
+.bg-img {
+  height: 85vh;
+  width: 100vw;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../Assets/Images/mountains_showcase_1920.jpg) no-repeat top;
+  background-size: cover;
 }
+
+header h2,
+header h4 {
+  color: var(--color-text-white-dark);
+  margin-bottom: 0.1em;
+}
+
+header h2 {
+  text-transform: uppercase;
+}
+
+/* Rooms section */
+
+#rooms-section {
+  background-color: var(--color-white-3);
+}
+
+/* Utilities section */
+
+#utilities-section {
+  border: 1px gray solid;
+}
+
+.utilities-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 3rem 5rem;
+  margin-top: 4rem;
+}
+
+.circle-icon-container {
+  background-color: var(--color-primary-dark);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-icon {
+  width: 60%;
+  height: 60%;
+  background-size: contain;
+}
+
+.smaller-icon {
+  width: 54%;
+  height: 54%;
+}
+
+.utility__header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.utility__header h5 {
+  margin-bottom: 0;
+  margin-left: 0.8rem;
+  color: var(--color-primary-dark);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.utility__description {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+}
+
+/* Attractions section */
 
 #attractions-section {
-  height: 100vh;
+  border: 1px gray solid;
+}
+
+#attractions-section .img-container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  margin-left: var(--mx-bg-neg);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+#attractions__img {
+  height: 20rem;
+  /* width: auto; */
+}
+
+.attraction__label {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.attraction-label__name {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Contact section */
+
+#contact-general-info,
+#contact-additional-info {
+  text-align: center;
+}
+
+#contact-general-info,
+#contact-form {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+#contact-section .home-section__description {
+  text-align: center;
+  font-size: 1rem;
 }
 
 #contact-section {
-  height: 100vh;
-}
-
-#rooms-section {
-  height: 100vh;
-}  */
-
-#contact-general-info {
+  background-color: var(--color-white-3);
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 #contact-additional-info {
+  background-color: var(--color-white-5);
+  margin-left: var(--mx-bg-neg);
+  margin-right: var(--mx-bg-neg);
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 }
 
-#contact-form {
+.additional-info__title {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
+
+.additional-info__content {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+#hotel-hours {
+  font-weight: 600;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.contact-info {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.contact-info * {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.contact-info:nth-child(2) {
+  border-left: 3px solid var(--color-primary-dark);
+  border-right: 3px solid var(--color-primary-dark);
+}
+
+.contact-info img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+#contact-form .section-header-small {
+  text-align: center;
+}
+
+/* Contact form */
+
+form label {
+  display: block;
+}
+
+/* 
+not used classes
+contact-info__content
+contact-info__type 
+utility
+*/

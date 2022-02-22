@@ -56,7 +56,8 @@ footer .decor {
   width: 2ch;
   height: 2ch;
 }
-.contact-info__content {
+
+footer .contact-info__content {
   display: inline-block;
   margin-left: 0.7rem;
   font-style: normal;
