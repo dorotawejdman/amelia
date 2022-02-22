@@ -5,6 +5,7 @@
 @import "Styles/buttons.css";
 @import "Styles/nav.css";
 @import "Styles/footer.css";
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
 *,
 *:before,
@@ -13,22 +14,20 @@
 }
 
 html {
-  font-family: "Libre", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    serif;
-  font-family: "Libre", Georgia, "Times New Roman", Times, serif;
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
   box-sizing: border-box;
   overflow-x: hidden;
 }
 
-@media (min-width:1660px){
-  html{
+@media (min-width: 1660px) {
+  html {
     font-size: 17px;
   }
 }
 
-@media (min-width:1920px){
-  html{
+@media (min-width: 1920px) {
+  html {
     font-size: 20px;
   }
 }
@@ -90,6 +89,10 @@ section {
   padding: 16vh var(--mx-bg);
 }
 
+section section {
+  padding: 1rem;
+}
+
 .decor {
   background-color: var(--color-primary-dark);
   border-radius: 1px;
@@ -98,7 +101,7 @@ section {
   width: 0.4rem;
 }
 
-.home-section__header{
+.home-section__header {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
@@ -244,20 +247,19 @@ header h2 {
   text-transform: uppercase;
 }
 
-
 /* Contact section */
 
-#contact-general-info, #contact-additional-info{
+#contact-general-info,
+#contact-additional-info {
   text-align: center;
-
 }
 
-#contact-section  .home-section__description{
+#contact-section .home-section__description {
   text-align: center;
   font-size: 1rem;
 }
 
-#contact-section  {
+#contact-section {
   background-color: var(--color-white-3);
 }
 
@@ -265,11 +267,13 @@ header h2 {
   background-color: var(--color-white-5);
   margin-left: var(--mx-bg-neg);
   margin-right: var(--mx-bg-neg);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .additional-info__title {
   color: var(--color-primary-dark);
-  margin-top: 2rem;
+
   margin-bottom: 0.3rem;
   font-weight: 600;
 }
@@ -282,7 +286,7 @@ header h2 {
   font-weight: 600;
 }
 
-.contact-info-container{
+.contact-info-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -299,7 +303,7 @@ header h2 {
 
 .contact-info * {
   margin-top: 0.3rem;
-  margin-bottom: 0.3rem;  
+  margin-bottom: 0.3rem;
 }
 
 #contact-phone {
@@ -309,11 +313,9 @@ header h2 {
 }
 
 .contact-info__type {
-
 }
 
 .contact-info__content {
-
 }
 
 #contact-form .section-header-small {
