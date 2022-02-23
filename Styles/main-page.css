@@ -45,6 +45,12 @@ header h2 {
   background-color: var(--color-white-3);
 }
 
+.room-card__image:after {
+  display: block;
+  content: '';
+  
+}
+
 /* Utilities section */
 
 #utilities-section {
