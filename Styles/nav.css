@@ -4,11 +4,13 @@ nav {
   flex-flow: row unwrap;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-white-1);
   position: sticky;
   width: 100%;
   top: 0%;
-  box-shadow: 0px 0px 7px 2px rgba(152, 158, 139, 0.25);
+  z-index: 2;
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--color-text-white-dark);
 }
 
 .nav__header {
@@ -29,4 +31,12 @@ nav {
   padding-left: 2vw;
   font-size: 1.1rem;
   /* color: (--color-text-white-dark); */
+}
+
+.nav-transparent {
+  color: var(--color-text-black-light);
+  box-shadow: 0px 0px 7px 2px rgba(152, 158, 139, 0.25);
+  transition: all 2s ease;
+  background-color: var(--color-white-1);
+  background-color: rgba(255, 255, 255, 0.9);
 }
