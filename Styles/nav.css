@@ -36,11 +36,9 @@ nav {
 .nav-menu__link.active:after {
   content: "";
   display: block;
-  /* position: absolute;
-  left: 50%; */
   margin: auto;
   margin-top: 0.1rem;
-  background-color: var(--color-primary-dark);
+  background-color: transparent;
   border-radius: 1px;
   transform: rotate(45deg);
   height: 0.4rem;
@@ -53,4 +51,8 @@ nav {
   transition: all 2s ease;
   background-color: rgb(255, 252, 249, 0.9);
   backdrop-filter: blur(2px);
+}
+
+.nav-transparent .nav-menu__link.active:after {
+  background-color: var(--color-primary-dark);
 }
