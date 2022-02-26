@@ -261,19 +261,25 @@
       <h4 class="section-header-small">Wypełnij formularz</h4>
       <div class="form-container">
         <form action="" class="form" id="form">
-          <label for="e-mail" class="form__label">E-mail</label>
-          <input type="text" name="e-mail" class="form__input" />
+          <label for="email" class="form__label">E-mail</label>
+          <input type="text" name="email" class="form__input" />
           <label for="message" class="form__label">Wiadomość</label>
           <textarea name="message" class="form__input form__input-message"></textarea>
           <p class="form__details__header">Dodatkowe informacje</p>
           <div class="form__details">
             <div class="form__details__column">
-              <label for="arrival-date" class="form__label">Data przyjazdu</label>
-              <input type="date" name="arrival-date" class="form__input form__input-date" />
+              <label for="arrivalDate" class="form__label">Data przyjazdu</label>
+              <input type="date" name="arrivalDate" class="form__input form__input-date" />
+              <label for="adultsNumber" class="form__label form__label-number">Liczba dorosłych</label>
+              <label for="kidsNumber" class="form__label form__label-number">Liczba dzieci</label>
+              <label for="animalsNumber" class="form__label form__label-number">Liczba zwierząt</label>
             </div>
             <div class="form__details__column">
-              <label for="departure-date" class="form__label">Data wyjazdu</label>
-              <input type="date" name="departure-date" class="form__input form__input-date" />
+              <label for="departureDate" class="form__label">Data wyjazdu</label>
+              <input type="date" name="departureDate" class="form__input form__input-date" />
+              <input type="number" name="adultsNumber" min="0" class="form__input form__input-number" />
+              <input type="number" name="kidsNumber" min="0" class="form__input form__input-number" />
+              <input type="number" name="animalsNumber" min="0" class="form__input form__input-number" />
             </div>
           </div>
           <div class="btn-container align-end">
