@@ -1,0 +1,74 @@
+/* Overwrites of global classes */
+
+section section {
+  padding: 0rem;
+}
+
+section {
+  padding: 8vh var(--mx-bg) 8vh var(--mx-bg);
+}
+
+.header-container {
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.home-section__header {
+  margin-left: var(--mx-bg);
+}
+
+.attractions-section {
+  display: flex;
+}
+
+.attractions-section__left {
+  width: 42%;
+}
+
+.attractions-section__right {
+  width: 42%;
+}
+
+.attractions-section__title {
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+.attractions-section__description {
+  line-height: 170%;
+  margin-bottom: 3rem;
+}
+
+img + .attractions-section__description {
+  margin-top: 2rem;
+}
+
+.attractions-section__img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Decors */
+
+.decor-horizontal {
+  height: 1.1rem;
+}
+
+.decor-vertical {
+  width: 1.1rem;
+}
+
+.decor-right {
+  position: absolute;
+  right: var(--mx-bg);
+}
+
+@media (max-width: 650px) {
+  .flex {
+    flex-direction: column;
+  }
+}
