@@ -7,10 +7,10 @@ document.addEventListener("scroll", function (e) {
     document.documentElement.clientHeight ||
     document.body.clientHeight;
   if (y > 0.85 * height) {
-    nav[0].classList.add("nav-transparent");
+    nav[0].classList.add("nav-solid");
   }
   if (y < 0.85 * height) {
-    nav[0].classList.remove("nav-transparent");
+    nav[0].classList.remove("nav-solid");
   }
 });
 

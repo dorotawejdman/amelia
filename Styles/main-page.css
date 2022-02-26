@@ -1,16 +1,3 @@
-/* Common */
-
-.home-section__header {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.home-section__description {
-  text-align: justify;
-  font-size: 1.1rem;
-  line-height: 1.6em;
-}
-
 /* Showcase section */
 
 #showcase-section {
