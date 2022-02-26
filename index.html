@@ -19,10 +19,10 @@
     <menu class="nav__menu">
       <ul>
         <li class="nav-menu__link active"><a href="">Główna</a></li>
-        <li class="nav-menu__link"><a href="">Oferta</a></li>
+        <li class="nav-menu__link"><a href="#rooms-section">Oferta</a></li>
         <li class="nav-menu__link"><a href="">Galeria</a></li>
         <li class="nav-menu__link"><a href="">Atrakcje</a></li>
-        <li class="nav-menu__link"><a href="">Kontakt</a></li>
+        <li class="nav-menu__link"><a href="#contact-section">Kontakt</a></li>
       </ul>
     </menu>
   </nav>
@@ -179,11 +179,10 @@
         <img src="./Assets/Images/e-marina.png" alt="Spływ kajakowy" class="attractions__img" />
       </div>
       <p class="home-section__description attraction-description">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-        survived not only five centurie. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-        it to make a type specimen book. It has survived not only five centurie. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-        took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.
-      </p>
+        Szczawnica oferuje bogaty wybór możliwości aktywnego spędzania wolnego czasu. Góry pokryte lasami o bogatej florze i faunie przyciągają amatorów pieszych wędrówek. Liczne szlaki turystyczne prowadzą na najwyższe szczyty Pienin i Gorców oraz do rezerwatów przyrody: Wąwozu Homole, Wysokich Skałek, a także do jednego z najpiękniejszych obfitujących w malownicze skałki i progi skalne, tworzące przełomy i wodospady - rezerwatu Białej Wody.</p>
+      <p class="home-section__description attraction-description">
+        Trasy dostosowane są do możliwości fizycznych przeciętnego użytkownika. W samym centrum Szczawnicy można skorzystać z kolejki krzesełkowej, prowadzącej na Palenicę skąd rozpościera się widok na wspaniałą panoramę Tatr, Pienin, Beskidu Sądeckiego i całej Szczawnicy.
+        Obok na sąsiedniej Szafranówce zbudowano letnią 700. metrową rynnę grawitacyjną, atrakcyjną zarówno dla dzieci jak i dla dorosłych.</p>
       <div class="flex">
         <div class="attraction__label">
           <div class="circle-icon-container">
@@ -261,11 +260,11 @@
     <section id="contact-form">
       <h4 class="section-header-small">Wypełnij formularz</h4>
       <div class="form-container">
-        <form action="" class="form">
+        <form action="" class="form" id="form">
           <label for="e-mail" class="form__label">E-mail</label>
           <input type="text" name="e-mail" class="form__input" />
           <label for="message" class="form__label">Wiadomość</label>
-          <input type="text" name="message" class="form__input form__input-message" />
+          <textarea name="message" class="form__input form__input-message"></textarea>
           <p class="form__details__header">Dodatkowe informacje</p>
           <div class="form__details">
             <div class="form__details__column">
