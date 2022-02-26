@@ -262,6 +262,10 @@ header h2 {
 
 /* Contact form */
 
+#contact-form {
+  background-color: var(--color-white-2);
+}
+
 #contact-form .section-header-small {
   text-align: center;
   margin-bottom: 3rem;
