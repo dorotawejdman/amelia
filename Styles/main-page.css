@@ -26,6 +26,15 @@ header h2 {
   text-transform: uppercase;
 }
 
+.showcase__arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+}
+.showcase__arrow:hover {
+  transform: scale(1.1);
+  transition: transform 1s ease;
+}
 /* Rooms section */
 
 #rooms-section {

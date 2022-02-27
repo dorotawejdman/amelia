@@ -18,11 +18,11 @@
     <div class="nav__contact-info">18 262 11 29</div>
     <menu class="nav__menu">
       <ul>
-        <li class="nav-menu__link active"><a href="">Główna</a></li>
-        <li class="nav-menu__link"><a href="#rooms-section">Oferta</a></li>
+        <li class="nav-menu__link active"><a href="#showcase-section">Główna</a></li>
+        <li class="nav-menu__link"><a href="#rooms-section" onclick="subpageSelected(1)">Oferta</a></li>
         <li class="nav-menu__link"><a href="gallery.html">Galeria</a></li>
         <li class="nav-menu__link"><a href="attractions.html">Atrakcje</a></li>
-        <li class="nav-menu__link"><a href="#contact-section">Kontakt</a></li>
+        <li class="nav-menu__link"><a href="#contact-section" onclick="subpageSelected(4)">Kontakt</a></li>
       </ul>
     </menu>
   </nav>
@@ -33,8 +33,9 @@
         <h2>Amelia</h2>
         <h4>Domek nad Grajcarkiem w Szczawnicy</h4>
       </header>
-      <button class="btn btn--accent-dark">Skontaktuj się</button>
-      <button class="btn btn--accent-dark-outline">Zobacz ofertę</button>
+      <button class="btn btn--accent-dark"><a href="#contact-section">Skontaktuj się</a></button>
+      <button class="btn btn--accent-dark-outline"><a href="#rooms-section">Zobacz ofertę</a></button>
+      <a href="#utilities-section"><img src="./Assets/Icons/Arrow-down.svg" alt="arrow" class="showcase__arrow"></a>
     </section>
     <section class="home-section" id="utilities-section">
       <h3 class="home-section__header">Witamy w naszym domku</h3>
@@ -168,7 +169,7 @@
         </div>
       </div>
       <div class="btn-container">
-        <button class="btn btn--accent-dark center">Galeria</button>
+        <a href="gallery.html"><button class="btn btn--accent-dark center">Galeria</button></a>
       </div>
     </section>
     <section class="home-section" id="attractions-section">
@@ -210,7 +211,9 @@
         </div>
       </div>
       <div class="btn-container">
-        <button class="btn btn--accent-dark center">Więcej</button>
+        <a href="attractions.html">
+          <button class="btn btn--accent-dark center">Więcej</button>
+        </a>
       </div>
     </section>
     <section class="home-section" id="contact-section">
@@ -347,6 +350,6 @@
       </address>
   </footer>
 </body>
-<script type="text/javascript" src="index.js">
-</script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="index.js"></script>
 </html>
