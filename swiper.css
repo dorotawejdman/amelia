@@ -1,0 +1,67 @@
+.swiper {
+  margin-right: -25vw;
+  margin-left: -25vw;
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+.room-card__imag {
+  height: auto;
+  width: auto;
+}
+
+.swiper-slide.swiper-slide-active {
+  transform: scale(1.1);
+  transition: transform 0.8s ease;
+  z-index: 2;
+}
+
+.swiper-button {
+  position: absolute;
+  top: 98%;
+  background-size: cover;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  height: 2rem;
+  width: 1rem;
+}
+
+.swiper-button-prev {
+  background-image: url(./Assets/Icons/Arrow-right-green.svg);
+  left: 42%;
+  transform: rotate(180deg);
+}
+
+.swiper-button-next {
+  background-image: url(./Assets/Icons/Arrow-right-green.svg);
+  right: 42%;
+}
+
+.swiper-button-prev:after {
+  content: "";
+}
+
+.swiper-button-next:after {
+  content: "";
+}
+
+.swiper-pagination-bullet {
+  border-radius: 2px;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin: 0 0.3rem;
+  transform: rotate(135deg);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-primary-dark);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  top: 95.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}

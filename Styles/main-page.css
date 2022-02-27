@@ -49,7 +49,8 @@ header h2 {
 
 .room-card {
   background-color: var(--color-white-2);
-  width: 20%;
+  width: auto;
+  margin: 1.5rem;
   box-shadow: 0px 0px 20px -8px rgba(175, 176, 191, 1);
 }
 
@@ -82,12 +83,14 @@ header h2 {
 
 .room-card__name {
   text-transform: uppercase;
+  font-weight: 600;
   font-size: 1.3em;
   margin-bottom: 0.5rem;
 }
 
 .room-card__description {
   text-align: justify;
+  line-height: 140%;
 }
 
 .room-card__badge {
@@ -99,6 +102,7 @@ header h2 {
   top: 0.5rem;
   right: 0.5rem;
 }
+
 /* Utilities section */
 
 .utilities-container {
