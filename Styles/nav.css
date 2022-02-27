@@ -1,7 +1,7 @@
 nav {
   padding: 1rem var(--mx-sm) 0.5rem var(--mx-sm);
   display: flex;
-  flex-flow: row unwrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: baseline;
   position: sticky;

@@ -19,7 +19,21 @@
   background-color: var(--color-accent-dark);
 }
 
+.btn--accent-dark:hover {
+  background-color: var(--color-accent-light);
+  border-color: var(--color-accent-light);
+  color: var(--color-text-black-light);
+  transition: color 0.5s ease;
+}
+
 .btn--accent-dark-outline {
   border: 3px solid var(--color-accent-dark);
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn--accent-dark-outline:hover {
+  background-color: var(--color-accent-light);
+  border-color: var(--color-accent-light);
+  transition: background-color 0.5s ease;
+  color: var(--color-text-black-light);
 }
