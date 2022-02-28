@@ -14,10 +14,26 @@ document.addEventListener("scroll", function (e) {
   }
 });
 
-// Scroll on button click to specific sections
-// function scrollToContact
-// var elementToView = document.getElementById("sectionId");
-// elementToView.scrollIntoView();
+// Navigation indicator change on scroll event
+window.addEventListener(
+  "scroll",
+  function (event) {
+    let contactTopDistance = this.document
+      .getElementById("contact-section")
+      .getBoundingClientRect().top;
+    let roomsHeightDistance = this.document
+      .getElementById("rooms-section")
+      .getBoundingClientRect().height;
+    let roomsTopDistance = this.document
+      .getElementById("rooms-section")
+      .getBoundingClientRect().top;
+    if (contactTopDistance < 10) setActiveLink(4);
+    else if (roomsTopDistance > -roomsHeightDistance && roomsTopDistance < 10)
+      setActiveLink(1);
+    else setActiveLink(0);
+  },
+  false
+);
 
 // Form change listener
 window.addEventListener("load", function () {
