@@ -331,6 +331,24 @@ form label {
   margin-bottom: 1.5rem;
   font-size: 0.8rem;
   margin-top: 1.5rem;
+  display: inline-block;
+}
+
+.form__details__arrow {
+  background-image: url(./../Assets/Icons/Arrow-up-black.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  margin-left: 1rem;
+  position: relative;
+  top: 0.5rem;
+  cursor: pointer;
+}
+
+.form__details__arrow--up {
+  background-image: url(./../Assets/Icons/Arrow-down-black.svg);
 }
 
 .form__details {

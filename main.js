@@ -60,3 +60,19 @@ window.addEventListener("load", function () {
     }
   });
 });
+
+// Form details opening
+
+let detailsOpen = false;
+let formDetailsElement = document.querySelector(".form__details");
+let formArrowElement = document.querySelector(".form__details__arrow");
+
+function formDetailsClicked() {
+  detailsOpen = !detailsOpen;
+  formArrowElement.classList.toggle("form__details__arrow--up");
+  if (detailsOpen) {
+    formDetailsElement.style.display = "none";
+  } else {
+    formDetailsElement.style.display = "flex";
+  }
+}
