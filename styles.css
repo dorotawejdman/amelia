@@ -124,3 +124,7 @@ section section {
   font-size: 1.1rem;
   line-height: 1.6em;
 }
+
+.d-none{
+  display: none;
+}
