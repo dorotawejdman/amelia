@@ -12,6 +12,7 @@
     <title>Amelia - galeria zdjęć</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="gallery.css" />
+    <link href="lightbox.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -36,39 +37,64 @@
         <div class="div1 tile-section"><h4 class="tiles-section__header">Pokoje</h4></div>
         <div class="div2 tile-section"><h4 class="tiles-section__header">Apartamenty</h4></div>
         <div class="div3 tile-section"><h4 class="tiles-section__header">Pensjonat</h4></div>
-        <div class="div4 tile">
-          <img src="./Assets/Images/Rooms/groszkowy.png" alt="" class="tile__img">
-          <div class="tile__text">
+        <div class="div4 tile" id="Groszkowy">
+          <a
+          href="./Assets/Images/Rooms/groszkowy.png"
+          class="lightbox1"
+          >
+            <img src="./Assets/Images/Rooms/groszkowy.png" alt="" class="tile__img">
+            <div class="tile__text">
+              <p class="tile__type">Pokój</h5>
+              <h5 class="tile__name">Groszkowy</h5>
+            </div>
+          </a>
+        </div>
+        <div class="div5 tile" id="Niebieski">
+          <a
+          href="./Assets/Images/Rooms/niebieski.png"
+          class="lightbox2"
+          >
+            <img src="./Assets/Images/Rooms/niebieski.png" alt="" class="tile__img">
+            <div class="tile__text">
             <p class="tile__type">Pokój</h5>
-            <h5 class="tile__name">Groszkowy</h5>
-          </div>
-        </div>
-        <div class="div5 tile">
-          <img src="./Assets/Images/Rooms/niebieski.png" alt="" class="tile__img">
-          <div class="tile__text">
-          <p class="tile__type">Pokój</h5>
-          <h5 class="tile__name">Niebieski</h5>
+            <h5 class="tile__name">Niebieski</h5>
+          </a>
         </div>
         </div>
-        <div class="div6 tile">
-          <img src="./Assets/Images/Rooms/zolty.png" alt="" class="tile__img">
-          <div class="tile__text">
-          <p class="tile__type">Pokój</h5>
-          <h5 class="tile__name">Żółty</h5>
+        <div class="div6 tile" id="Zolty">
+          <a
+          href="./Assets/Images/Rooms/zolty.png"
+          class="lightbox3"
+          >
+            <img src="./Assets/Images/Rooms/zolty.png" alt="" class="tile__img">
+            <div class="tile__text">
+            <p class="tile__type">Pokój</h5>
+            <h5 class="tile__name">Żółty</h5>
+          </a>
         </div>
         </div>
-        <div class="div7 tile">
-          <img src="./Assets/Images/Rooms/motylkowy.png" alt="" class="tile__img">
-          <div class="tile__text">
-          <p class="tile__type">Pokój</h5>
-          <h5 class="tile__name">Motylkowy</h5>
+        <div class="div7 tile" id="Motylkowy">
+          <a
+          href="./Assets/Images/Rooms/niebieski.png"
+          class="lightbox1"
+          >
+            <img src="./Assets/Images/Rooms/motylkowy.png" alt="" class="tile__img">
+            <div class="tile__text">
+            <p class="tile__type">Pokój</h5>
+            <h5 class="tile__name">Motylkowy</h5>
+            </a>
         </div>
         </div>
-        <div class="div8 tile">
+        <div class="div8 tile" id="Zloggia">
+          <a
+          href="./Assets/Images/Rooms/niebieski.png"
+          class="lightbox1"
+          >
           <img src="./Assets/Images/Rooms/zloggia.png" alt="" class="tile__img">
           <div class="tile__text">
-          <p class="tile__type">Pokój</h5>
+          <p class="tile__type">Pokój</p>
           <h5 class="tile__name">Z loggią</h5>
+          </a>
         </div>
         </div>
         <div class="div9 tile">
@@ -201,6 +227,8 @@
       </address>
     </footer>
   </body>
-  <script type="text/javascript" src=""></script>
+  <script type="text/javascript" src="gallery.js"></script>
+  <script src="lightbox.js"></script>
+  <script type="text/javascript" src="lightboxDeclarations.js"></script>
   <script type="text/javascript" src="index.js"></script>
 </html>
