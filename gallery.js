@@ -2,15 +2,15 @@ let imagesPerFolder = {
   Groszkowy: 3,
   Niebieski: 3,
   Zolty: 3,
-  Rzymski: 3,
-  Zloggia: 3,
   Motylkowy: 3,
+  Zloggia: 3,
+  Rzymski: 3,
   Wschodni: 3,
   Zachodni: 3,
   Poludniowy: 3,
+  Widoki: 0,
   Otoczenie: 2,
   Budynek: 5,
-  Widoki: 0,
 };
 
 Object.keys(imagesPerFolder).forEach((folder, idKey) => {

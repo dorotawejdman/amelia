@@ -1,181 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Chris Mills" />
-    <meta
-      name="description"
-      content="Domek w Szczawnicy oferujący noclegi, do wynajęcia pokoje i apartamenty 2-4 osobowe. Okolica pełna atrakcji letnich i zimowych, dla dorosłych i dzieci."
-    />
-    <title>Amelia - galeria zdjęć</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="gallery.css" />
-    <link href="lightbox.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <nav class="nav-solid">
-      <header class="nav__header">Amelia</header>
-      <a class="nav__contact-info"  href="tel:182621129">
-        <div class="nav_phone-icon"></div>
-        18 262 11 29
-      </a>
-      <menu class="nav__menu">
-        <ul>
-          <li class="nav-menu__link"><a href="index.html" onclick="subpageSelected(0)">Główna</a></li>
-          <li class="nav-menu__link"><a href="index.html#rooms-section" onclick="subpageSelected(1)">Oferta</a></li>
-          <li class="nav-menu__link active"><a href="#" onclick="subpageSelected(2)">Galeria</a></li>
-          <li class="nav-menu__link"><a href="attractions.html" onclick="subpageSelected(3)">Atrakcje</a></li>
-          <li class="nav-menu__link"><a href="index.html#contact-section" onclick="subpageSelected(4)">Kontakt</a></li>
-        </ul>
-      </menu>
-    </nav>
-    <main>
-      <div class="tiles-container">
-        <div class="div1 tile-section"><h4 class="tiles-section__header">Pokoje</h4></div>
-        <div class="div2 tile-section"><h4 class="tiles-section__header">Apartamenty</h4></div>
-        <div class="div3 tile-section"><h4 class="tiles-section__header">Pensjonat</h4></div>
-        <div class="div4 tile" id="Groszkowy">
-          <a
-          href="./Assets/Images/Rooms/groszkowy.png"
-          class="lightbox1"
-          >
-            <img src="./Assets/Images/Rooms/groszkowy.png" alt="" class="tile__img">
-            <div class="tile__text">
-              <p class="tile__type">Pokój</h5>
-              <h5 class="tile__name">Groszkowy</h5>
-            </div>
-          </a>
-        </div>
-        <div class="div5 tile" id="Niebieski">
-          <a
-          href="./Assets/Images/Rooms/niebieski.png"
-          class="lightbox2"
-          >
-            <img src="./Assets/Images/Rooms/niebieski.png" alt="" class="tile__img">
-            <div class="tile__text">
-            <p class="tile__type">Pokój</h5>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Chris Mills" />
+  <meta name="description" content="Domek w Szczawnicy oferujący noclegi, do wynajęcia pokoje i apartamenty 2-4 osobowe. Okolica pełna atrakcji letnich i zimowych, dla dorosłych i dzieci." />
+  <title>Amelia - galeria zdjęć</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="gallery.css" />
+  <link href="lightbox.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="nav-solid">
+    <header class="nav__header">Amelia</header>
+    <a class="nav__contact-info" href="tel:182621129">
+      <div class="nav_phone-icon"></div>
+      18 262 11 29
+    </a>
+    <menu class="nav__menu">
+      <ul>
+        <li class="nav-menu__link"><a href="index.html" onclick="subpageSelected(0)">Główna</a></li>
+        <li class="nav-menu__link"><a href="index.html#rooms-section" onclick="subpageSelected(1)">Oferta</a></li>
+        <li class="nav-menu__link active"><a href="#" onclick="subpageSelected(2)">Galeria</a></li>
+        <li class="nav-menu__link"><a href="attractions.html" onclick="subpageSelected(3)">Atrakcje</a></li>
+        <li class="nav-menu__link"><a href="index.html#contact-section" onclick="subpageSelected(4)">Kontakt</a></li>
+      </ul>
+    </menu>
+  </nav>
+  <main>
+    <div class="tiles-container">
+      <div class="div1 tile-section">
+        <h4 class="tiles-section__header">Pokoje</h4>
+      </div>
+      <div class="div2 tile-section">
+        <h4 class="tiles-section__header">Apartamenty</h4>
+      </div>
+      <div class="div3 tile-section">
+        <h4 class="tiles-section__header">Pensjonat</h4>
+      </div>
+      <div class="div4 tile" id="Groszkowy">
+        <a href="./Assets/Images/Rooms/groszkowy.png" class="lightbox1">
+          <img src="./Assets/Images/Rooms/groszkowy.png" alt="" class="tile__img">
+          <div class="tile__text">
+            <p class="tile__type">Pokój</p>
+            <h5 class="tile__name">Groszkowy</h5>
+          </div>
+        </a>
+      </div>
+      <div class="div5 tile" id="Niebieski">
+        <a href="./Assets/Images/Rooms/niebieski.png" class="lightbox2">
+          <img src="./Assets/Images/Rooms/niebieski.png" alt="" class="tile__img">
+          <div class="tile__text">
+            <p class="tile__type">Pokój</p>
             <h5 class="tile__name">Niebieski</h5>
-          </a>
+        </a>
         </div>
-        </div>
-        <div class="div6 tile" id="Zolty">
-          <a
-          href="./Assets/Images/Rooms/zolty.png"
-          class="lightbox3"
-          >
-            <img src="./Assets/Images/Rooms/zolty.png" alt="" class="tile__img">
-            <div class="tile__text">
+      </div>
+      <div class="div6 tile" id="Zolty">
+        <a href="./Assets/Images/Rooms/zolty.png" class="lightbox3">
+          <img src="./Assets/Images/Rooms/zolty.png" alt="" class="tile__img">
+          <div class="tile__text">
             <p class="tile__type">Pokój</h5>
-            <h5 class="tile__name">Żółty</h5>
-          </a>
+              <h5 class="tile__name">Żółty</h5>
+        </a>
         </div>
-        </div>
-        <div class="div7 tile" id="Motylkowy">
-          <a
-          href="./Assets/Images/Rooms/niebieski.png"
-          class="lightbox1"
-          >
-            <img src="./Assets/Images/Rooms/motylkowy.png" alt="" class="tile__img">
-            <div class="tile__text">
+      </div>
+      <div class="div7 tile" id="Motylkowy">
+        <a href="./Assets/Images/Rooms/niebieski.png" class="lightbox4">
+          <img src="./Assets/Images/Rooms/motylkowy.png" alt="" class="tile__img">
+          <div class="tile__text">
             <p class="tile__type">Pokój</h5>
-            <h5 class="tile__name">Motylkowy</h5>
-            </a>
+              <h5 class="tile__name">Motylkowy</h5>
+        </a>
         </div>
-        </div>
-        <div class="div8 tile" id="Zloggia">
-          <a
-          href="./Assets/Images/Rooms/niebieski.png"
-          class="lightbox1"
-          >
+      </div>
+      <div class="div8 tile" id="Zloggia">
+        <a href="./Assets/Images/Rooms/niebieski.png" class="lightbox5">
           <img src="./Assets/Images/Rooms/zloggia.png" alt="" class="tile__img">
           <div class="tile__text">
-          <p class="tile__type">Pokój</p>
-          <h5 class="tile__name">Z loggią</h5>
-          </a>
+            <p class="tile__type">Pokój</p>
+            <h5 class="tile__name">Z loggią</h5>
+        </a>
         </div>
-        </div>
-        <div class="div9 tile">
+      </div>
+      <div class="div9 tile">
+        <a href="./Assets/Images/Rooms/niebieski.png" class="lightbox6">
           <img src="./Assets/Images/Rooms/rzymski.png" alt="" class="tile__img">
           <div class="tile__text">
-          <p class="tile__type">Pokój</h5>
-          <h5 class="tile__name">Rzymski</h5>
-        </div>
-        </div>
-        <div class="div10 tile">
+            <p class="tile__type">Pokój</p>
+            <h5 class="tile__name">Rzymski</h5>
+          </div>
+        </a>
+      </div>
+      <div class="div10 tile">
+        <a href="./Assets/Images/Rooms/niebieski.png" class="lightbox7">
           <img src="./Assets/Images/Rooms/wschodni.png" alt="" class="tile__img">
           <div class="tile__text">
-          <p class="tile__type">Apartament</h5>
-          <h5 class="tile__name">Wschodni</h5>
-        </div>
-        </div>
-        <div class="div11 tile">
+            <p class="tile__type">Apartament</p>
+            <h5 class="tile__name">Wschodni</h5>
+          </div>
+        </a>
+      </div>
+      <div class="div11 tile">
+        <a href="./Assets/Images/Rooms/niebieski.png" class="lightbox8">
           <img src="./Assets/Images/Rooms/zachodni.png" alt="" class="tile__img">
           <div class="tile__text">
-          <p class="tile__type">Apartament</h5>
-          <h5 class="tile__name">Zachodni</h5>
-        </div>
-        </div>
-        <div class="div12 tile">
+            <p class="tile__type">Apartament</p>
+            <h5 class="tile__name">Zachodni</h5>
+          </div>
+        </a>
+      </div>
+      <div class="div12 tile">
+        <a href="./Assets/Images/Rooms/niebieski.png" class="lightbox9">
           <img src="./Assets/Images/Rooms/poludniowy.png" alt="" class="tile__img">
           <div class="tile__text">
-          <p class="tile__type">Apartament</h5>
-          <h5 class="tile__name">Południowy</h5>
-        </div>
-        </div>
-        <div class="div13 tile">
+            <p class="tile__type">Apartament</p>
+            <h5 class="tile__name">Południowy</h5>
+          </div>
+        </a>
+      </div>
+      <div class="div13 tile">
+        <a href="./Assets/Images/Rooms/niebieski.png" class="lightbox10">
           <img src="./Assets/Images/Rooms/otoczenie.png" alt="" class="tile__img">
           <div class="tile__text">
-          <p class="tile__type">Pensjonat</h5>
-          <h5 class="tile__name">Otoczenie</h5>
-        </div>
-        </div>
-        <div class="div14 tile">
+            <p class="tile__type">Pensjonat</p>
+            <h5 class="tile__name">Otoczenie</h5>
+          </div>
+        </a>
+      </div>
+      <div class="div14 tile">
+        <a href="./Assets/Images/Rooms/niebieski.png" class="lightbox11">
           <img src="./Assets/Images/Rooms/budynek.png" alt="" class="tile__img">
           <div class="tile__text">
-          <p class="tile__type">Pensjonat</h5>
-          <h5 class="tile__name">Budynek</h5>
-        </div>
-        </div>
-        <div class="div15 tile">
+            <p class="tile__type">Pensjonat</p>
+            <h5 class="tile__name">Budynek</h5>
+          </div>
+        </a>
+      </div>
+      <div class="div15 tile">
+        <a href="./Assets/Images/Rooms/niebieski.png" class="lightbox11">
           <img src="./Assets/Images/Rooms/widoki.png" alt="" class="tile__img">
           <div class="tile__text">
-          <p class="tile__type">Pensjonat</h5>
-          <h5 class="tile__name">Widoki</h5>
-        </div>
-        </div>
-        </div>
+            <p class="tile__type">Pensjonat</p>
+            <h5 class="tile__name">Widoki</h5>
+          </div>
+        </a>
       </div>
-    </main>
-    <footer>
-      <div class="footer-header">
-        <p class="footer-header__title">Amelia</p>
-        <p class="footer-header__description">
-          Idealny wypoczynek dla osób indywidualnych oraz grup zorganizowanych.
-        </p>
-      </div>
-      <menu class="nav__menu">
-        <ul>
-          <li class="nav-menu__link"><a href="">Główna</a></li>
-          <div class="decor"></div>
-          <li class="nav-menu__link"><a href="">Oferta</a></li>
-          <div class="decor"></div>
-          <li class="nav-menu__link"><a href="">Galeria</a></li>
-          <div class="decor"></div>
-          <li class="nav-menu__link"><a href="">Atrakcje</a></li>
-          <div class="decor"></div>
-          <li class="nav-menu__link"><a href="">Kontakt</a></li>
-        </ul>
-      </menu>
-      <div id="rights" class="footer-rights">
-        <p class="right">Ikony pochdzą z icons8.com</p>
-        <p class="right">Strona wykonana przez Wejdman</p>
-        <p class="right">© AMELIA - noclegi w Szczawnicy</p>
-      </div>
-      <hr />
-      <address class="footer-contact-info">
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-header">
+      <p class="footer-header__title">Amelia</p>
+      <p class="footer-header__description">
+        Idealny wypoczynek dla osób indywidualnych oraz grup zorganizowanych.
+      </p>
+    </div>
+    <menu class="nav__menu">
+      <ul>
+        <li class="nav-menu__link"><a href="">Główna</a></li>
+        <div class="decor"></div>
+        <li class="nav-menu__link"><a href="">Oferta</a></li>
+        <div class="decor"></div>
+        <li class="nav-menu__link"><a href="">Galeria</a></li>
+        <div class="decor"></div>
+        <li class="nav-menu__link"><a href="">Atrakcje</a></li>
+        <div class="decor"></div>
+        <li class="nav-menu__link"><a href="">Kontakt</a></li>
+      </ul>
+    </menu>
+    <div id="rights" class="footer-rights">
+      <p class="right">Ikony pochdzą z icons8.com</p>
+      <p class="right">Strona wykonana przez Wejdman</p>
+      <p class="right">© AMELIA - noclegi w Szczawnicy</p>
+    </div>
+    <hr />
+    <address class="footer-contact-info">
         <div class="contact-info--small">
           <img
             src="./Assets/Icons/icons8-phone-50.png"
@@ -225,10 +228,11 @@
           <p class="contact-info__content">Nocowanie.pl</p>
         </div>
       </address>
-    </footer>
-  </body>
-  <script type="text/javascript" src="gallery.js"></script>
-  <script src="lightbox.js"></script>
-  <script type="text/javascript" src="lightboxDeclarations.js"></script>
-  <script type="text/javascript" src="index.js"></script>
+  </footer>
+</body>
+<script type="text/javascript" src="gallery.js"></script>
+<script src="lightbox.js"></script>
+<script type="text/javascript" src="lightboxDeclarations.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
 </html>
