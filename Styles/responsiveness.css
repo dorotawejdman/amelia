@@ -1,19 +1,108 @@
-html {
-  --very-large: 1660px;
+:root {
+  --very-large: 1920px;
   --large: 1660px;
-  --medium: 1660px;
-  --small: 1660px;
-  --very-small: 1660px;
+  --medium: 1200px;
+  --small: 750px;
+  --very-small: 400px;
 }
 
-@media (min-width: 1660px) {
+/* Global */
+@media (max-width: 1920px) {
+  html {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 1660px) {
   html {
     font-size: 16px !important;
   }
 }
 
-@media (min-width: 1920px) {
+@media (max-width: 1200px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 12px !important;
+  }
+}
+
+/* Main Page */
+@media (max-width: 1920px) {
   html {
     font-size: 18px !important;
+    --mx-bg: 10vw;
+  }
+}
+
+@media (max-width: 1660px) {
+  html {
+    font-size: 16px !important;
+    --mx-bg: 8vw;
+  }
+  .room-card__badge {
+    font-size: 0.9em;
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px !important;
+    --mx-bg: 6vw;
+  }
+  .nav__contact-info {
+    display: none;
+  }
+  .swiper-button-prev {
+    left: 38%;
+  }
+  .swiper-button-next {
+    right: 38%;
+  }
+}
+.attraction_labels {
+  flex-wrap: wrap;
+}
+@media (max-width: 750px) {
+  html {
+    --mx-bg: 4vw;
+  }
+  .attraction__label {
+    width: 50%;
+    margin: 0.5rem 0;
+  }
+  .utilities-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .contact-info-container {
+    flex-direction: column;
+  }
+  .contact-info:nth-child(2) {
+    border-bottom: 3px solid var(--color-primary-dark);
+    border-top: 3px solid var(--color-primary-dark);
+    border-left: none;
+    border-right: none;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 12px !important;
+    --mx-bg: 2vw;
+  }
+  .attraction__label {
+    width: 100%;
   }
 }

@@ -72,3 +72,25 @@ img + .attractions-section__description {
     flex-direction: column;
   }
 }
+
+/* Responsiveness */
+
+@media (max-width: 1200px) {
+  .attractions-section {
+    flex-direction: column;
+  }
+  .attractions-section__left,
+  .attractions-section__right {
+    width: 100%;
+  }
+  .decor-vertical {
+    position: absolute;
+    opacity: 0.1;
+    transform: scale(2);
+    z-index: -2;
+  }
+  .decor-vertical.bottom-one {
+    position: absolute;
+    left: 12px;
+  }
+}

@@ -12,6 +12,8 @@ html {
   --color-gray-light: #3a3b36;
   --color-text-white-light: var(--color-white-1);
   --color-text-white-dark: var(--color-white-2);
+  --color-text-black-light: var(--color-gray-dark);
+  --color-text-black-dark: var(--color-gray-light);
   --mx-sm: 10vw;
   --mx-bg: 15vw;
   --mx-bg-neg: -15vw;
