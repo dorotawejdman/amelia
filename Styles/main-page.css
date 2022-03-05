@@ -59,7 +59,7 @@ header h2 {
 .showcase__arrow {
   position: absolute;
   left: 50%;
-  bottom: 8%;
+  bottom: 12%;
 }
 .showcase__arrow:hover {
   transform: scale(1.1);
