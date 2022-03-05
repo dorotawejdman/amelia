@@ -1,4 +1,4 @@
-html{
+html {
   --very-large: 1660px;
   --large: 1660px;
   --medium: 1660px;
@@ -8,12 +8,12 @@ html{
 
 @media (min-width: 1660px) {
   html {
-    font-size: 17px;
+    font-size: 16px !important;
   }
 }
 
 @media (min-width: 1920px) {
   html {
-    font-size: 20px;
+    font-size: 18px !important;
   }
 }

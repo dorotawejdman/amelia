@@ -51,6 +51,7 @@ footer .decor {
 .footer-contact-info {
   display: flex;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .contact-info__icon {
