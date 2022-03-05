@@ -3,6 +3,8 @@
 #showcase-section {
   padding-top: 35vh;
   height: 100vh;
+  z-index: 50;
+  position: relative;
 }
 
 .bg-img {
@@ -12,8 +14,36 @@
   position: absolute;
   top: 0;
   left: 0;
+  background-size: cover !important;
+}
+
+.showcase-layer {
+  height: 85vh;
+  width: 100vw;
+  z-index: 21;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(14, 49, 32, 0.3);
+  pointer-events: none;
+}
+
+.bg-img-1 {
   background: url(../Assets/Images/mountains_showcase_1920.jpg) no-repeat top;
-  background-size: cover;
+}
+.bg-img-2 {
+  background: url(../Assets/Images/e_bicycle_1280.png) no-repeat top;
+}
+.bg-img-3 {
+  background: url(../Assets/Images/originals/mountain_1280.jpg) no-repeat top;
+}
+
+.swiper-showcase {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 header h2,

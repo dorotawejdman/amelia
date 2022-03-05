@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Chris Mills" />
-  <meta name="description" content="Domek w Szczawnicy oferujący noclegi, do wynajęcia pokoje i apartamenty 2-4 osobowe. Okolica pełna atrakcji letnich i zimowych, dla dorosłych i dzieci." />
+  <meta name="description"
+    content="Domek w Szczawnicy oferujący noclegi, do wynajęcia pokoje i apartamenty 2-4 osobowe. Okolica pełna atrakcji letnich i zimowych, dla dorosłych i dzieci." />
   <title>Amelia - noclegi w Szczawnicy nad Grajcarkiem</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="Styles/main-page.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="swiper.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="swiper.css" />
 </head>
 
 <body>
@@ -19,7 +20,7 @@
     <a href="#">
       <header class="nav__header">Amelia</header>
     </a>
-    <a class="nav__contact-info"  href="tel:182621129">
+    <a class="nav__contact-info" href="tel:182621129">
       <div class="nav_phone-icon"></div>
       18 262 11 29
     </a>
@@ -35,7 +36,6 @@
   </nav>
   <main>
     <section id="showcase-section">
-      <div class="bg-img"></div>
       <header>
         <h2>Amelia</h2>
         <h4>Domek nad Grajcarkiem w Szczawnicy</h4>
@@ -44,6 +44,23 @@
       <button class="btn btn--accent-dark-outline"><a href="#rooms-section">Zobacz ofertę</a></button>
       <a href="#utilities-section"><img src="./Assets/Icons/Arrow-down.svg" alt="arrow" class="showcase__arrow"></a>
     </section>
+     <!-- Slider main container -->
+     <div class="swiper-showcase">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class=" bg-img bg-img-1"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-img bg-img-2"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-img bg-img-3"></div>
+        </div>
+        <div class="showcase-layer"></div>
+      </div>
+    </div>
     <section class="home-section" id="utilities-section">
       <h3 class="home-section__header">Witamy w naszym domku</h3>
       <p class="home-section__description">
@@ -64,7 +81,8 @@
         <div class="utility">
           <div class="utility__header">
             <div class="circle-icon-container">
-              <img src="./Assets/Icons/icons8-cooking-pot-50-2.png" alt="cooking icon" class="circle-icon smaller-icon "></img>
+              <img src="./Assets/Icons/icons8-cooking-pot-50-2.png" alt="cooking icon"
+                class="circle-icon smaller-icon "></img>
             </div>
             <h5>Kuchnie i łazienki</h5>
           </div>
@@ -155,176 +173,178 @@
     <section class="home-section" id="rooms-section">
       <h3 class="home-section__header">Nasze pokoje</h3>
       <p class="home-section__description">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has
         survived not only five centurie.
       </p>
       <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper room-cards-container">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <div class="room-card">
-            <div class="room-card__image">
-              <img src="./Assets/Images/Rooms/Room-card/zolty.JPG" alt="" />
-            </div>
-            <div class="room-card-text-container">
-              <p class="room-card__type">Pokój</p>
-              <p class="room-card__name">Żółty</p>
-              <p class="room-card__description">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsu.
-              </p>
-              <div class="room-card__badge">20m<sup>2</sup></div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="room-card">
-            <div class="room-card__image">
-              <img src="./Assets/Images/Rooms/Room-card/niebieski.JPG" alt="" />
-            </div>
-            <div class="room-card-text-container">
-              <p class="room-card__type">Pokój</p>
-              <p class="room-card__name">Niebieski</p>
-              <p class="room-card__description">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsu.
-              </p>
-              <div class="room-card__badge">20m<sup>2</sup></div>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper room-cards-container">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="room-card">
+              <div class="room-card__image">
+                <img src="./Assets/Images/Rooms/Room-card/zolty.JPG" alt="" />
+              </div>
+              <div class="room-card-text-container">
+                <p class="room-card__type">Pokój</p>
+                <p class="room-card__name">Żółty</p>
+                <p class="room-card__description">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsu.
+                </p>
+                <div class="room-card__badge">20m<sup>2</sup></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="room-card">
-            <div class="room-card__image">
-              <img src="./Assets/Images/Rooms/Room-card/groszkowy.JPG" alt="" />
-            </div>
-            <div class="room-card-text-container">
-              <p class="room-card__type">Pokój</p>
-              <p class="room-card__name">Groszkowy</p>
-              <p class="room-card__description">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsu.
-              </p>
-              <div class="room-card__badge">20m<sup>2</sup></div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="room-card">
-            <div class="room-card__image">
-              <img src="./Assets/Images/Rooms/Room-card/zloggia.png" alt="" />
-            </div>
-            <div class="room-card-text-container">
-              <p class="room-card__type">Pokój</p>
-              <p class="room-card__name">Z loggią</p>
-              <p class="room-card__description">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsu.
-              </p>
-              <div class="room-card__badge">25m<sup>2</sup></div>
+          <div class="swiper-slide">
+            <div class="room-card">
+              <div class="room-card__image">
+                <img src="./Assets/Images/Rooms/Room-card/niebieski.JPG" alt="" />
+              </div>
+              <div class="room-card-text-container">
+                <p class="room-card__type">Pokój</p>
+                <p class="room-card__name">Niebieski</p>
+                <p class="room-card__description">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsu.
+                </p>
+                <div class="room-card__badge">20m<sup>2</sup></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="room-card">
-            <div class="room-card__image">
-              <img src="./Assets/Images/Rooms/Room-card/motylkowy.JPG" alt="" />
-            </div>
-            <div class="room-card-text-container">
-              <p class="room-card__type">Pokój</p>
-              <p class="room-card__name">Motylkowy</p>
-              <p class="room-card__description">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsu.
-              </p>
-              <div class="room-card__badge">20m<sup>2</sup></div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="room-card">
-            <div class="room-card__image">
-              <img src="./Assets/Images/Rooms/Room-card/rzymski.JPG" alt="" />
-            </div>
-            <div class="room-card-text-container">
-              <p class="room-card__type">Pokój</p>
-              <p class="room-card__name">Rzymski</p>
-              <p class="room-card__description">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsu.
-              </p>
-              <div class="room-card__badge">20m<sup>2</sup></div>
+          <div class="swiper-slide">
+            <div class="room-card">
+              <div class="room-card__image">
+                <img src="./Assets/Images/Rooms/Room-card/groszkowy.JPG" alt="" />
+              </div>
+              <div class="room-card-text-container">
+                <p class="room-card__type">Pokój</p>
+                <p class="room-card__name">Groszkowy</p>
+                <p class="room-card__description">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsu.
+                </p>
+                <div class="room-card__badge">20m<sup>2</sup></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="room-card">
-            <div class="room-card__image">
-              <img src="./Assets/Images/Rooms/Room-card/rzymski.JPG" alt="" />
-            </div>
-            <div class="room-card-text-container">
-              <p class="room-card__type">Apartament</p>
-              <p class="room-card__name">Wschodni</p>
-              <p class="room-card__description">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsu.
-              </p>
-              <div class="room-card__badge">24m<sup>2</sup></div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="room-card">
-            <div class="room-card__image">
-              <img src="./Assets/Images/Rooms/Room-card/rzymski.JPG" alt="" />
-            </div>
-            <div class="room-card-text-container">
-              <p class="room-card__type">Apartament</p>
-              <p class="room-card__name">Zachodni</p>
-              <p class="room-card__description">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsu.
-              </p>
-              <div class="room-card__badge">29m<sup>2</sup></div>
+          <div class="swiper-slide">
+            <div class="room-card">
+              <div class="room-card__image">
+                <img src="./Assets/Images/Rooms/Room-card/zloggia.png" alt="" />
+              </div>
+              <div class="room-card-text-container">
+                <p class="room-card__type">Pokój</p>
+                <p class="room-card__name">Z loggią</p>
+                <p class="room-card__description">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsu.
+                </p>
+                <div class="room-card__badge">25m<sup>2</sup></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="room-card">
-            <div class="room-card__image">
-              <img src="./Assets/Images/Rooms/Room-card/rzymski.JPG" alt="" />
-            </div>
-            <div class="room-card-text-container">
-              <p class="room-card__type">Apartament</p>
-              <p class="room-card__name">Południowy</p>
-              <p class="room-card__description">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsu.
-              </p>
-              <div class="room-card__badge">35m<sup>2</sup></div>
+          <div class="swiper-slide">
+            <div class="room-card">
+              <div class="room-card__image">
+                <img src="./Assets/Images/Rooms/Room-card/motylkowy.JPG" alt="" />
+              </div>
+              <div class="room-card-text-container">
+                <p class="room-card__type">Pokój</p>
+                <p class="room-card__name">Motylkowy</p>
+                <p class="room-card__description">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsu.
+                </p>
+                <div class="room-card__badge">20m<sup>2</sup></div>
+              </div>
             </div>
           </div>
+          <div class="swiper-slide">
+            <div class="room-card">
+              <div class="room-card__image">
+                <img src="./Assets/Images/Rooms/Room-card/rzymski.JPG" alt="" />
+              </div>
+              <div class="room-card-text-container">
+                <p class="room-card__type">Pokój</p>
+                <p class="room-card__name">Rzymski</p>
+                <p class="room-card__description">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsu.
+                </p>
+                <div class="room-card__badge">20m<sup>2</sup></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-card">
+              <div class="room-card__image">
+                <img src="./Assets/Images/Rooms/Room-card/rzymski.JPG" alt="" />
+              </div>
+              <div class="room-card-text-container">
+                <p class="room-card__type">Apartament</p>
+                <p class="room-card__name">Wschodni</p>
+                <p class="room-card__description">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsu.
+                </p>
+                <div class="room-card__badge">24m<sup>2</sup></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-card">
+              <div class="room-card__image">
+                <img src="./Assets/Images/Rooms/Room-card/rzymski.JPG" alt="" />
+              </div>
+              <div class="room-card-text-container">
+                <p class="room-card__type">Apartament</p>
+                <p class="room-card__name">Zachodni</p>
+                <p class="room-card__description">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsu.
+                </p>
+                <div class="room-card__badge">29m<sup>2</sup></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="room-card">
+              <div class="room-card__image">
+                <img src="./Assets/Images/Rooms/Room-card/rzymski.JPG" alt="" />
+              </div>
+              <div class="room-card-text-container">
+                <p class="room-card__type">Apartament</p>
+                <p class="room-card__name">Południowy</p>
+                <p class="room-card__description">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsu.
+                </p>
+                <div class="room-card__badge">35m<sup>2</sup></div>
+              </div>
+            </div>
+          </div>
+          ...
         </div>
-        ...
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button swiper-button-prev"></div>
-      <div class="swiper-button swiper-button-next"></div>
-    </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button swiper-button-prev"></div>
+        <div class="swiper-button swiper-button-next"></div>
+      </div>
       <div class="btn-container">
         <a href="gallery.html"><button class="btn btn--accent-dark center">Galeria</button></a>
       </div>
@@ -337,10 +357,17 @@
         <img src="./Assets/Images/e-marina.png" alt="Spływ kajakowy" class="attractions__img" />
       </div>
       <p class="home-section__description attraction-description">
-        Szczawnica oferuje bogaty wybór możliwości aktywnego spędzania wolnego czasu. Góry pokryte lasami o bogatej florze i faunie przyciągają amatorów pieszych wędrówek. Liczne szlaki turystyczne prowadzą na najwyższe szczyty Pienin i Gorców oraz do rezerwatów przyrody: Wąwozu Homole, Wysokich Skałek, a także do jednego z najpiękniejszych obfitujących w malownicze skałki i progi skalne, tworzące przełomy i wodospady - rezerwatu Białej Wody.</p>
+        Szczawnica oferuje bogaty wybór możliwości aktywnego spędzania wolnego czasu. Góry pokryte lasami o bogatej
+        florze i faunie przyciągają amatorów pieszych wędrówek. Liczne szlaki turystyczne prowadzą na najwyższe szczyty
+        Pienin i Gorców oraz do rezerwatów przyrody: Wąwozu Homole, Wysokich Skałek, a także do jednego z
+        najpiękniejszych obfitujących w malownicze skałki i progi skalne, tworzące przełomy i wodospady - rezerwatu
+        Białej Wody.</p>
       <p class="home-section__description attraction-description">
-        Trasy dostosowane są do możliwości fizycznych przeciętnego użytkownika. W samym centrum Szczawnicy można skorzystać z kolejki krzesełkowej, prowadzącej na Palenicę skąd rozpościera się widok na wspaniałą panoramę Tatr, Pienin, Beskidu Sądeckiego i całej Szczawnicy.
-        Obok na sąsiedniej Szafranówce zbudowano letnią 700. metrową rynnę grawitacyjną, atrakcyjną zarówno dla dzieci jak i dla dorosłych.</p>
+        Trasy dostosowane są do możliwości fizycznych przeciętnego użytkownika. W samym centrum Szczawnicy można
+        skorzystać z kolejki krzesełkowej, prowadzącej na Palenicę skąd rozpościera się widok na wspaniałą panoramę
+        Tatr, Pienin, Beskidu Sądeckiego i całej Szczawnicy.
+        Obok na sąsiedniej Szafranówce zbudowano letnią 700. metrową rynnę grawitacyjną, atrakcyjną zarówno dla dzieci
+        jak i dla dorosłych.</p>
       <div class="flex">
         <div class="attraction__label">
           <div class="circle-icon-container">
@@ -425,8 +452,11 @@
           <input type="text" name="email" class="form__input" />
           <label for="message" class="form__label">Wiadomość</label>
           <textarea name="message" class="form__input form__input-message"></textarea>
-          <div><p class="form__details__header">Dodatkowe informacje</p><div class="form__details__arrow" onclick="formDetailsClicked()"></div></div>
-          
+          <div>
+            <p class="form__details__header">Dodatkowe informacje</p>
+            <div class="form__details__arrow" onclick="formDetailsClicked()"></div>
+          </div>
+
           <div class="form__details">
             <div class="form__details__column">
               <label for="arrivalDate" class="form__label">Data przyjazdu</label>
@@ -450,7 +480,8 @@
       </div>
     </section>
     <div class="map-responsive">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.0622637696633!2d20.464678316180045!3d49.426636868480365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e0429bc75667d%3A0x1ec0c3835a5395d9!2sAmelia.%20Pa%C5%82ka%20J.!5e0!3m2!1spl!2spl!4v1645602161500!5m2!1spl!2spl"
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.0622637696633!2d20.464678316180045!3d49.426636868480365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e0429bc75667d%3A0x1ec0c3835a5395d9!2sAmelia.%20Pa%C5%82ka%20J.!5e0!3m2!1spl!2spl!4v1645602161500!5m2!1spl!2spl"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </main>
@@ -481,54 +512,36 @@
     </div>
     <hr />
     <address class="footer-contact-info">
-        <div class="contact-info--small">
-          <img src="./Assets/Icons/icons8-phone-50.png" alt="Ikona telefonu" class="contact-info__icon"/>
-          <p class="contact-info__content">18 262 11 29</p>
-        </div>
-        <div class="contact-info--small">
-          <img src="./Assets/Icons/icons8-location-50.png" alt="Ikona telefonu" class="contact-info__icon"/>
-          <p class="contact-info__content">ul. Nad Grajcarkiem 10 Szczawnica</p>
-        </div>
-        <div class="contact-info--small">
-          <img src="./Assets/Icons/icons8-mail-50.png" alt="Ikona telefonu" class="contact-info__icon"/>
-          <p class="contact-info__content">amelianadgrajcarkiem@gmail.com</p>
-        </div>
-        <div class="contact-info--small">
-          <img src="./Assets/Icons/icons8-form-50.png" alt="Ikona telefonu" class="contact-info__icon"/>
-          <p class="contact-info__content">Formularz kontaktowy</p>
-        </div>
-        <div class="contact-info--small">
-          <img src="./Assets/Icons/icons8-facebook-50.png" alt="Ikona telefonu" class="contact-info__icon"/>
-          <p class="contact-info__content">Facebook</p>
-        </div>
-        <div class="contact-info--small">
-          <img src="./Assets/Icons/icons8-bed-50.png" alt="Ikona telefonu" class="contact-info__icon"/>
-          <p class="contact-info__content">Nocowanie.pl</p>
-        </div>
-      </address>
+      <div class="contact-info--small">
+        <img src="./Assets/Icons/icons8-phone-50.png" alt="Ikona telefonu" class="contact-info__icon" />
+        <p class="contact-info__content">18 262 11 29</p>
+      </div>
+      <div class="contact-info--small">
+        <img src="./Assets/Icons/icons8-location-50.png" alt="Ikona telefonu" class="contact-info__icon" />
+        <p class="contact-info__content">ul. Nad Grajcarkiem 10 Szczawnica</p>
+      </div>
+      <div class="contact-info--small">
+        <img src="./Assets/Icons/icons8-mail-50.png" alt="Ikona telefonu" class="contact-info__icon" />
+        <p class="contact-info__content">amelianadgrajcarkiem@gmail.com</p>
+      </div>
+      <div class="contact-info--small">
+        <img src="./Assets/Icons/icons8-form-50.png" alt="Ikona telefonu" class="contact-info__icon" />
+        <p class="contact-info__content">Formularz kontaktowy</p>
+      </div>
+      <div class="contact-info--small">
+        <img src="./Assets/Icons/icons8-facebook-50.png" alt="Ikona telefonu" class="contact-info__icon" />
+        <p class="contact-info__content">Facebook</p>
+      </div>
+      <div class="contact-info--small">
+        <img src="./Assets/Icons/icons8-bed-50.png" alt="Ikona telefonu" class="contact-info__icon" />
+        <p class="contact-info__content">Nocowanie.pl</p>
+      </div>
+    </address>
   </footer>
 </body>
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="index.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper(".swiper", {
-    // Optional parameters
-    direction: "horizontal",
-    centeredSlides: true,
-    slidesPerView: 5,
-    loop: true,
+<script src="swiper.js"></script>
 
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-</script>
 </html>
