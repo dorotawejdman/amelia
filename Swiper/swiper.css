@@ -27,13 +27,13 @@
 }
 
 .swiper-button-prev {
-  background-image: url(./Assets/Icons/Arrow-right-green.svg);
+  background-image: url(../Assets/Icons/Arrow-right-green.svg);
   left: 42%;
   transform: rotate(180deg);
 }
 
 .swiper-button-next {
-  background-image: url(./Assets/Icons/Arrow-right-green.svg);
+  background-image: url(../Assets/Icons/Arrow-right-green.svg);
   right: 42%;
 }
 

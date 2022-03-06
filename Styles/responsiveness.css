@@ -9,47 +9,49 @@
 /* Global */
 @media (max-width: 1920px) {
   html {
-    font-size: 18px !important;
+    font-size: 14px !important;
+    --mx-bg: 12vw;
+    --mx-bg-neg: -12vw;
   }
 }
 
 @media (max-width: 1660px) {
   html {
-    font-size: 16px !important;
+    font-size: 13px !important;
+    --mx-bg: 10vw;
+    --mx-bg-neg: -10vw;
   }
 }
 
 @media (max-width: 1200px) {
   html {
-    font-size: 14px !important;
+    font-size: 12px !important;
+    --mx-bg: 8vw;
+    --mx-bg-neg: -8vw;
   }
 }
 
 @media (max-width: 750px) {
   html {
-    font-size: 13px !important;
+    --mx-bg: 6vw;
+    --mx-bg-neg: -6vw;
+    font-size: 11px !important;
   }
 }
 
 @media (max-width: 400px) {
   html {
-    font-size: 12px !important;
+    --mx-bg: 6vw;
+    --mx-bg-neg: -6vw;
+    font-size: 10px !important;
   }
 }
 
 /* Main Page */
 @media (max-width: 1920px) {
-  html {
-    font-size: 18px !important;
-    --mx-bg: 10vw;
-  }
 }
 
 @media (max-width: 1660px) {
-  html {
-    font-size: 16px !important;
-    --mx-bg: 8vw;
-  }
   .room-card__badge {
     font-size: 0.9em;
     padding: 0.4rem;
@@ -57,10 +59,6 @@
 }
 
 @media (max-width: 1200px) {
-  html {
-    font-size: 15px !important;
-    --mx-bg: 6vw;
-  }
   .nav__contact-info {
     display: none;
   }
@@ -75,8 +73,20 @@
   flex-wrap: wrap;
 }
 @media (max-width: 750px) {
-  html {
-    --mx-bg: 4vw;
+  nav .nav-menu__link {
+    display: none;
+  }
+  .utilities-container {
+    gap: 1.5rem 3rem;
+  }
+  .swiper-button-prev {
+    left: 30%;
+  }
+  .swiper-button-next {
+    right: 30%;
+  }
+  .room-card {
+    margin: 1.5rem;
   }
   .attraction__label {
     width: 50%;
@@ -89,20 +99,52 @@
   .contact-info-container {
     flex-direction: column;
   }
+  .contact-info {
+    width: 80%;
+    align-self: center;
+  }
   .contact-info:nth-child(2) {
-    border-bottom: 3px solid var(--color-primary-dark);
-    border-top: 3px solid var(--color-primary-dark);
+    border-bottom: 2px solid var(--color-primary-dark);
+    border-top: 2px solid var(--color-primary-dark);
     border-left: none;
     border-right: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .form-button-container {
+    align-self: center;
+  }
+  form {
+    width: 100%;
+  }
+  .form__input {
+    width: 100%;
+  }
+  .form__details .form__input {
+    width: 100%;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .form__details {
+    width: 100%;
+  }
+  .map-responsive {
+    padding-bottom: 50%;
   }
 }
 
 @media (max-width: 400px) {
-  html {
-    font-size: 12px !important;
-    --mx-bg: 2vw;
-  }
   .attraction__label {
     width: 100%;
+  }
+  #showcase-section btn {
+    display: block;
+  }
+  .btn {
+    margin: 1rem 1rem 0rem 0;
+  }
+  .map-responsive {
+    padding-bottom: 70%;
   }
 }

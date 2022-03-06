@@ -75,7 +75,7 @@ img + .attractions-section__description {
 
 /* Responsiveness */
 
-@media (max-width: 1200px) {
+@media (max-width: 750px) {
   .attractions-section {
     flex-direction: column;
   }
@@ -92,5 +92,8 @@ img + .attractions-section__description {
   .decor-vertical.bottom-one {
     position: absolute;
     left: 12px;
+  }
+  section {
+    padding: 4vh var(--mx-bg) 4vh var(--mx-bg);
   }
 }

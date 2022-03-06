@@ -83,6 +83,7 @@ hr {
 
 section {
   padding: 16vh var(--mx-bg);
+  overflow: hidden;
 }
 
 section section {
@@ -100,10 +101,6 @@ section section {
 .center {
   margin-left: auto;
   margin-right: auto;
-}
-
-.align-end {
-  align-self: flex-end;
 }
 
 .align-start {

@@ -194,6 +194,7 @@ header h2 {
   margin-left: var(--mx-bg-neg);
   margin-top: 3rem;
   margin-bottom: 3rem;
+  overflow-x: hidden;
 }
 
 #attractions__img {
@@ -295,6 +296,7 @@ header h2 {
 
 #contact-form {
   background-color: var(--color-white-2);
+  width: 100%;
 }
 
 #contact-form .section-header-small {
@@ -412,6 +414,9 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: 0.5rem;
 }
 
+.form-button-container {
+  align-self: flex-end;
+}
 /* Map section */
 
 .map-responsive {
