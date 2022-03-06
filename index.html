@@ -447,7 +447,7 @@
     <section id="contact-form">
       <h4 class="section-header-small">Wypełnij formularz</h4>
       <div class="form-container">
-        <form action="" class="form" id="form">
+        <form action="email.php" class="form" id="form" method="post" onsubmit="submit()">
           <label for="email" class="form__label">E-mail</label>
           <input type="text" name="email" class="form__input" />
           <label for="message" class="form__label">Wiadomość</label>
@@ -474,7 +474,7 @@
             </div>
           </div>
           <div class="btn-container align-end">
-            <button class="btn btn--accent-dark">Wyślij</button>
+            <button type="submit" class="btn btn--accent-dark">Wyślij</button>
           </div>
         </form>
       </div>

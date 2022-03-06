@@ -16,3 +16,7 @@ window.onload = function () {
   let activeLink = window.sessionStorage.getItem("activeLink");
   setActiveLink(activeLink);
 };
+
+function submit() {
+  return false;
+}
