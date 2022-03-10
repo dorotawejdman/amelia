@@ -16,3 +16,8 @@ window.onload = function () {
   let activeLink = window.sessionStorage.getItem("activeLink");
   setActiveLink(activeLink);
 };
+
+// Burger menu opening
+function onMenuClick() {
+  document.querySelector('.nav__menu').classList.toggle('dropdown-open')
+}

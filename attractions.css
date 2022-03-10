@@ -93,4 +93,14 @@ img + .attractions-section__description {
     position: absolute;
     left: 12px;
   }
+  section{
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+  }
+}
+
+@media (max-width: 750px) {
+  .decor-horizontal.decor-right {
+    display:none;
+  }
 }

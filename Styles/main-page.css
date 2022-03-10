@@ -147,6 +147,7 @@ header h2 {
 .circle-icon-container {
   background-color: var(--color-primary-dark);
   border-radius: 50%;
+  min-width: 2.5rem;
   width: 2.5rem;
   height: 2.5rem;
   display: flex;

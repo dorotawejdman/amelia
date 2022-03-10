@@ -74,6 +74,7 @@
 .attraction_labels {
   flex-wrap: wrap;
 }
+
 @media (max-width: 750px) {
   html {
     --mx-bg: 4vw;
