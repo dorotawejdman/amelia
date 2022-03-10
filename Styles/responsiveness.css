@@ -61,9 +61,9 @@
     font-size: 15px !important;
     --mx-bg: 6vw;
   }
-  .nav__contact-info {
+  /* .nav__contact-info {
     display: none;
-  }
+  } */
   .swiper-button-prev {
     left: 38%;
   }
@@ -77,7 +77,7 @@
 
 @media (max-width: 750px) {
   html {
-    --mx-bg: 4vw;
+    --mx-bg: 6vw;
   }
   .attraction__label {
     width: 50%;
@@ -101,7 +101,7 @@
 @media (max-width: 400px) {
   html {
     font-size: 12px !important;
-    --mx-bg: 2vw;
+    --mx-bg: 4vw;
   }
   .attraction__label {
     width: 100%;
