@@ -76,3 +76,5 @@ function formDetailsClicked() {
     formDetailsElement.style.display = "flex";
   }
 }
+
+

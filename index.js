@@ -20,3 +20,7 @@ window.onload = function () {
 function submit() {
   return false;
 }
+// Burger menu opening
+function onMenuClick() {
+  document.querySelector(".nav__menu").classList.toggle("dropdown-open");
+}
