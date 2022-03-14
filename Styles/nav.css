@@ -84,10 +84,13 @@ nav {
     background-color: rgb(255, 252, 249, 0.9);
     backdrop-filter: blur(2px);
   }
-
-
+  
   menu{
     display: none;
+  }
+
+  footer menu{
+    display: block;
   }
 
   .nav__burger-bar {
