@@ -69,6 +69,7 @@ header h2 {
 
 #rooms-section {
   background-color: var(--color-white-3);
+  overflow: hidden;
 }
 
 .room-cards-container {
@@ -195,6 +196,7 @@ header h2 {
   margin-left: var(--mx-bg-neg);
   margin-top: 3rem;
   margin-bottom: 3rem;
+  overflow-x: hidden;
 }
 
 #attractions__img {
@@ -309,14 +311,13 @@ header h2 {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  width: 50rem;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
+  width: 50rem;
 }
 
 form label {
