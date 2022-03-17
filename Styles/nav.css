@@ -4,8 +4,8 @@ nav {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: baseline;
-  position: sticky;
-  width: 100%;
+  position: fixed;
+  width: 100vw;
   top: 0%;
   background-color: transparent;
   box-shadow: none;
@@ -77,7 +77,12 @@ nav {
 }
 
 /* Responsiveness */
+@media (max-width: 1200px) {
 
+  .nav__contact-info {
+    display: none;
+  }
+}
 
 @media (max-width: 750px) {
   nav {
@@ -90,6 +95,10 @@ nav {
 
   menu{
     display: none;
+  }
+
+  .nav__contact-info {
+    display: block;
   }
 
   footer menu{
@@ -109,7 +118,7 @@ nav {
     display: flex;
     position: absolute;
     top: 3.16rem;
-    background-color: rgba(255,255,255,0.95);
+    background-color: rgba(249, 246, 243, 0.94);
     width: 100%;
     margin-left: var(--mx-sm-neg);
     backdrop-filter: blur(2px);

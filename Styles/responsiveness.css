@@ -100,6 +100,25 @@
     margin-top:0;
     margin-bottom:0;
   }
+  .room-card{
+    margin: 1.5rem;
+  }
+  .room-card__name{
+    font-size: 1.1em;
+    margin-top: 0.8rem;
+  }
+  .contact-info{
+    width:70%;
+  }
+  .swiper-button-prev {
+    left: 30%;
+  }
+  .swiper-button-next {
+    right: 30%;
+  }
+  .map-responsive {
+    padding-bottom: 60%;
+  }
 }
 
 @media (max-width: 400px) {
@@ -109,5 +128,8 @@
   }
   .attraction__label {
     width: 100%;
+  }
+  .contact-info{
+    width:90%;
   }
 }
