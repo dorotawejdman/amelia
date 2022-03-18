@@ -79,11 +79,14 @@
   .form__input {
     width: 100%;
   }
-  /* .attraction_labels {
-    flex-wrap: wrap;
-  } */
-}
+  form {
+    width: 100%;
+  }
 
+}
+.attraction_labels {
+  flex-wrap: wrap;
+}
 
 @media (max-width: 750px) {
   html {
@@ -111,7 +114,7 @@
     margin-bottom:0;
   }
   .room-card{
-    margin: 1.5rem;
+    margin: 1rem;
   }
   .room-card__name{
     font-size: 1.1em;
