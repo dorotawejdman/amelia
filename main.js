@@ -35,32 +35,6 @@ window.addEventListener(
   false
 );
 
-// Form change listener
-// window.addEventListener("load", function () {
-//   document.getElementById("form").addEventListener("submit", function (e) {
-//     e.preventDefault();
-//     let email = e.target.elements.email.value;
-//     let message = e.target.elements.message.value;
-//     let departureDate = e.target.elements.departureDate.value;
-//     let arrivalDate = e.target.elements.arrivalDate.value;
-//     let adultsNumber = e.target.elements.adultsNumber.value;
-//     let kidsNumber = e.target.elements.kidsNumber.value;
-//     let animalsNumber = e.target.elements.animalsNumber.value;
-//     let emailContent = `Wiadomość od ${email}\nTreść:\n${message}\n`;
-//     let additionalContent = `Data przyjazdu:  ${arrivalDate}\nData wyjazdu:  ${departureDate}\nLiczba dorosłych:  ${adultsNumber}\nLiczba dzieci:  ${kidsNumber}\nLiczba zwierząt:  ${animalsNumber}`;
-//     console.log(emailContent);
-//     if (
-//       arrivalDate ||
-//       departureDate ||
-//       adultsNumber ||
-//       kidsNumber ||
-//       animalsNumber
-//     ) {
-//       console.log(emailContent + additionalContent);
-//     }
-//   });
-// });
-
 // Form details opening
 
 let detailsOpen = false;
@@ -76,5 +50,3 @@ function formDetailsClicked() {
     formDetailsElement.style.display = "flex";
   }
 }
-
-

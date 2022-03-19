@@ -32,7 +32,8 @@
   background: url(../Assets/Images/mountains_showcase_1920.jpg) no-repeat top;
 }
 .bg-img-2 {
-  background: url(../Assets/Images/e_bicycle_1280.png) no-repeat top;
+  background: url(../Assets/Images/Budynek.jpg) no-repeat top;
+  background-position: center;
 }
 .bg-img-3 {
   background: url(../Assets/Images/originals/mountain_1280.jpg) no-repeat top;
@@ -59,7 +60,7 @@ header h2 {
 .showcase__arrow {
   position: absolute;
   left: 50%;
-  bottom: 12%;
+  bottom: 10%;
 }
 .showcase__arrow:hover {
   transform: scale(1.1);

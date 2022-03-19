@@ -1,8 +1,8 @@
 .tiles-container {
-  margin: 8vh var(--mx-bg) 8vh var(--mx-bg);
+  margin: 8rem var(--mx-bg) 8vh var(--mx-bg);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 300px);
+  grid-template-rows: repeat(5, 250px);
   grid-column-gap: 5px;
   grid-row-gap: 5px;
 }
@@ -33,10 +33,10 @@
   background-size: cover;
 }
 
-.tile__cover-layer{
+.tile__cover-layer {
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -44,40 +44,40 @@
 }
 
 .groszkowy {
-  background-image: url(./Assets/Images/Rooms/groszkowy.png);
+  background-image: url(./../../Assets/Images/Rooms/groszkowy.png);
 }
 .niebieski {
-  background-image: url(./Assets/Images/Rooms/niebieski.png);
+  background-image: url(./../../Assets/Images/Rooms/niebieski.png);
 }
 .motylkowy {
-  background-image: url(./Assets/Images/Rooms/motylkowy.png);
+  background-image: url(./../../Assets/Images/Rooms/motylkowy.png);
 }
 .zolty {
-  background-image: url(./Assets/Images/Rooms/zolty.png);
+  background-image: url(./../../Assets/Images/Rooms/zolty.png);
 }
 .zloggia {
-  background-image: url(./Assets/Images/Rooms/zloggia.png);
+  background-image: url(./../../Assets/Images/Rooms/zloggia.png);
 }
 .rzymski {
-  background-image: url(./Assets/Images/Rooms/rzymski.png);
+  background-image: url(./../../Assets/Images/Rooms/rzymski.png);
 }
 .wschodni {
-  background-image: url(./Assets/Images/Rooms/wschodni.png);
+  background-image: url(./../../Assets/Images/Rooms/wschodni.png);
 }
 .zachodni {
-  background-image: url(./Assets/Images/Rooms/zachodni.png);
+  background-image: url(./../../Assets/Images/Rooms/zachodni.png);
 }
 .poludniowy {
-  background-image: url(./Assets/Images/Rooms/poludniowy.png);
+  background-image: url(./../../Assets/Images/Rooms/poludniowy.png);
 }
 .otoczenie {
-  background-image: url(./Assets/Images/Rooms/otoczenie.png);
+  background-image: url(./../../Assets/Images/Rooms/otoczenie.png);
 }
 .budynek {
-  background-image: url(./Assets/Images/Rooms/budynek.png);
+  background-image: url(./../../Assets/Images/Rooms/budynek.png);
 }
 .widoki {
-  background-image: url(./Assets/Images/Rooms/widoki.png);
+  background-image: url(./../../Assets/Images/Rooms/widoki.png);
 }
 
 .tile__cover-layer:hover {
@@ -163,6 +163,12 @@
 }
 .div18 {
   grid-area: 5 / 5 / 6 / 6;
+}
+
+@media (max-width: 1660px) {
+  .tiles-container {
+    grid-template-rows: repeat(5, 220px);
+  }
 }
 
 @media (max-width: 1200px) {
