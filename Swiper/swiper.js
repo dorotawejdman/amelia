@@ -32,10 +32,21 @@ const swiperShowcase = new Swiper(".swiper-showcase", {
     crossFade: true,
   },
   spaceBetween: 30,
-  effect: "fade",
+  effect: "creative",
+
+  creativeEffect: {
+    prev: {
+      // will set `translateZ(-400px)` on previous slides
+      opacity: 0,
+    },
+    next: {
+      // will set `translateX(100%)` on next slides
+      opacity: 1,
+    },
+  },
   // Autoplay
   autoplay: {
-    delay: 5000,
+    delay: 4000,
   },
   updateOnWindowResize: true,
   // Navigation arrows

@@ -65,3 +65,6 @@
   left: 50%;
   transform: translateX(-50%);
 }
+.image-slider .swiper-container.transition .swiper-wrapper .swiper-slide {
+  transition: opacity 0.3s ease;
+}

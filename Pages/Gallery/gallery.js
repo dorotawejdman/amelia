@@ -5,9 +5,9 @@ let imagesPerFolder = {
   Motylkowy: 8,
   Zloggia: 7,
   Rzymski: 8,
-  Wschodni: 3,
-  Zachodni: 3,
-  Poludniowy: 3,
+  Wschodni: 8,
+  Zachodni: 11,
+  Poludniowy: 9,
   Otoczenie: 7,
   Budynek: 15,
   Widoki: 7,
@@ -16,7 +16,7 @@ let imagesPerFolder = {
 Object.keys(imagesPerFolder).forEach((folder, idKey) => {
   console.log("." + folder);
   let containerElement = document.querySelector("#" + folder);
-  for (var i = 2; i <= imagesPerFolder[folder]; i++) {
+  for (var i = 1; i <= imagesPerFolder[folder]; i++) {
     var src = "./Assets/Images/Galeria/" + folder + "/" + i + ".JPG";
     let link = document.createElement("a");
     link.setAttribute("href", src);

@@ -167,11 +167,11 @@
 
 @media (max-width: 1660px) {
   .tiles-container {
-    grid-template-rows: repeat(5, 220px);
+    grid-template-rows: repeat(5, 200px);
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 750px) {
   .tiles-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(10, 200px);
@@ -226,4 +226,8 @@
   .tiles-container {
     margin: 0;
   }
+}
+
+.lightbox-slider {
+  top: 30px;
 }

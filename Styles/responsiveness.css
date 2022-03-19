@@ -87,9 +87,9 @@
 }
 
 @media (max-width: 750px) {
-  nav .nav-menu__link {
+  /* nav .nav-menu__link {
     display: none;
-  }
+  } */
   .swiper-button-prev {
     left: 30%;
   }
@@ -134,6 +134,15 @@
   .room-card__name {
     font-size: 1.1em;
     margin-top: 0.8rem;
+  }
+
+  header {
+    text-align: center;
+  }
+  #showcase-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
