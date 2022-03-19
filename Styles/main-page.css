@@ -203,7 +203,9 @@ header h2 {
   margin-bottom: 3rem;
   overflow-x: hidden;
 }
-
+#attractions-section .img-container img {
+  margin: 0 0.5rem;
+}
 #attractions__img {
   height: 20rem;
   /* width: auto; */
