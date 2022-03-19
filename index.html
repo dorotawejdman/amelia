@@ -5,9 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Dorota Wejdman" />
   <meta name="description"
     content="Domek w Szczawnicy oferujący noclegi, do wynajęcia pokoje i apartamenty 2-4 osobowe. Okolica pełna atrakcji letnich i zimowych, dla dorosłych i dzieci." />
+  <meta name="keywords"
+    content="szczawnica, noclegi, wynajem, amelia, grajcarek, domek, nocleg, pieniny"/>
   <title>Amelia - noclegi w Szczawnicy nad Grajcarkiem</title>
   <link rel="stylesheet" href="Styles/main-page.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -448,7 +449,7 @@
     <section id="contact-form">
       <h4 class="section-header-small">Wypełnij formularz</h4>
       <div class="form-container">
-        <form action="email.php" class="form" id="form" method="post" onsubmit="submit()">
+        <form action="email.php" class="form" id="form" method="post" onsubmit="return false">
           <label for="email" class="form__label">E-mail</label>
           <input type="text" name="email" class="form__input" />
           <label for="message" class="form__label">Wiadomość</label>
@@ -543,6 +544,6 @@
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="index.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="./Swiper/swiper.js"></script>
+<script type="text/javascript" src="./Swiper/swiper.js"></script>
 
 </html>
