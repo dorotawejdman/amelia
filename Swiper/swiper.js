@@ -37,7 +37,7 @@ const swiperShowcase = new Swiper(".swiper-showcase", {
   autoplay: {
     delay: 5000,
   },
-
+  updateOnWindowResize: true,
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
