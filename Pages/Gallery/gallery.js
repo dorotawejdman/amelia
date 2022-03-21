@@ -16,7 +16,7 @@ let imagesPerFolder = {
 Object.keys(imagesPerFolder).forEach((folder, idKey) => {
   console.log("." + folder);
   let containerElement = document.querySelector("#" + folder);
-  for (var i = 1; i <= imagesPerFolder[folder]; i++) {
+  for (var i = 2; i <= imagesPerFolder[folder]; i++) {
     var src = "./Assets/Images/Galeria/" + folder + "/" + i + ".JPG";
     let link = document.createElement("a");
     link.setAttribute("href", src);
