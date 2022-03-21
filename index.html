@@ -239,7 +239,7 @@
           <div class="swiper-slide">
             <div class="room-card">
               <div class="room-card__image">
-                <img src="./Assets/Images/Rooms/Room-card/zloggia.png" alt="" />
+                <img src="./Assets/Images/Rooms/Room-card/zloggia.JPG" alt="" />
               </div>
               <div class="room-card-text-container">
                 <p class="room-card__type">Pokój</p>
@@ -290,7 +290,7 @@
           <div class="swiper-slide">
             <div class="room-card">
               <div class="room-card__image">
-                <img src="./Assets/Images/Rooms/Room-card/wschodni.jpg" alt="" />
+                <img src="./Assets/Images/Rooms/Room-card/wschodni.JPG" alt="" />
               </div>
               <div class="room-card-text-container">
                 <p class="room-card__type">Apartament</p>
@@ -302,7 +302,7 @@
           <div class="swiper-slide">
             <div class="room-card">
               <div class="room-card__image">
-                <img src="./Assets/Images/Rooms/Room-card/zachodni.jpg" alt="" />
+                <img src="./Assets/Images/Rooms/Room-card/zachodni.JPG" alt="" />
               </div>
               <div class="room-card-text-container">
                 <p class="room-card__type">Apartament</p>
@@ -314,7 +314,7 @@
           <div class="swiper-slide">
             <div class="room-card">
               <div class="room-card__image">
-                <img src="./Assets/Images/Rooms/Room-card/poludniowy.jpg" alt="" />
+                <img src="./Assets/Images/Rooms/Room-card/poludniowy.JPG" alt="" />
               </div>
               <div class="room-card-text-container">
                 <p class="room-card__type">Apartament</p>
@@ -466,6 +466,34 @@
         </form>
       </div>
     </section>
+    <div style="color:transparent">
+      <?php
+      
+      use PHPMailer\PHPMailer\PHPMailer; 
+      require 'PHPMailer/src/PHPMailer.php';
+      $body = ""; 
+      $body .= "E-mail: ".$email."\r\n";
+    
+      $mail = new PHPMailer(true);         
+      $mail->isSMTP(); // using SMTP protocol                                     
+      $mail->Host = 'smtp.gmail.com'; // SMTP host as gmail 
+      $mail->SMTPAuth = true;  // enable smtp authentication                             
+      $mail->Username = 'amelia.noclegi@gmail.com';  // sender gmail host              
+      $mail->Password = 'ameliaNoclegi22'; // sender gmail host password                          
+      $mail->SMTPSecure = 'ssl';  // for encrypted connection                           
+      $mail->Port = 587;   // port for SMTP     
+    
+      $mail->setFrom('amelia.noclegi@gmail.com', "Sender"); // sender's email and name
+      $mail->addAddress('amelia.noclegi@gmail.com', "Receiver");  // receiver's email and name
+    
+      $mail->Subject = $subject;
+      $mail->Body    = $body;
+    
+      $mail->send();
+      echo 'Message has been sent';
+      echo $mail->ErrorInfo;
+    ?>
+    </div>
     <div class="map-responsive">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.0622637696633!2d20.464678316180045!3d49.426636868480365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e0429bc75667d%3A0x1ec0c3835a5395d9!2sAmelia.%20Pa%C5%82ka%20J.!5e0!3m2!1spl!2spl!4v1645602161500!5m2!1spl!2spl"
@@ -526,63 +554,6 @@
       </div>
     </address>
   </footer>
-
-  <?php
-  
-  use PHPMailer\PHPMailer\PHPMailer; 
-  use PHPMailer\PHPMailer\Exception;
-
-  require 'PHPMailer/src/Exception.php';
-  require 'PHPMailer/src/PHPMailer.php';
-
-
-
-  $email = $_POST['email'];
-  $message = $_POST['message'];
-  $adultsNumber = $_POST['adultsNumber'];
-  $kidsNumber = $_POST['kidsNumber'];
-  $animalsNumber = $_POST['animalsNumber'];
-  $arrivalDate = $_POST['arrivalDate'];
-  $departureDate = $_POST['departureDate'];
-  
-
-  $myMail = "dorota.wejdman@gmail.com";
-  $subject = "MAIL od: ".$email;
-  $body = ""; 
-  
-  $body .= "E-mail: ".$email."\r\n";
-  $body .= "Treść wiadomości: ".$message."\r\n";
-  $body .= "Szczegółowe informacje\n";
-  $body .= "Termin: ".$arrivalDate." - ".$departureDate."\r\n";
-  $body .= "Liczba osób dorosłych: ".$adultsNumber."\r\n";
-  $body .= "Liczba dzieci: ".$kidsNumber."\r\n";
-  $body .= "Liczba zwierząt: ".$animalsNumber."\r\n";
-
-  $mail = new PHPMailer(true);                              
-   try {
-       $mail->isSMTP(); // using SMTP protocol                                     
-       $mail->Host = 'smtp.gmail.com'; // SMTP host as gmail 
-       $mail->SMTPAuth = true;  // enable smtp authentication                             
-       $mail->Username = 'amelia.noclegi@gmail.com';  // sender gmail host              
-       $mail->Password = 'ameliaNoclegi22'; // sender gmail host password                          
-       $mail->SMTPSecure = 'ssl';  // for encrypted connection                           
-       $mail->Port = 587;   // port for SMTP     
-
-       $mail->setFrom('amelia.noclegi@gmail.com', "Sender"); // sender's email and name
-       $mail->addAddress('amelia.noclegi@gmail.com', "Receiver");  // receiver's email and name
-
-       $mail->Subject = $subject;
-       $mail->Body    = $body;
-
-       $mail->send();
-       echo 'Message has been sent';
-   } catch (Exception $e) { 
-       echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
-   }
-   echo $mail->ErrorInfo;
-
-?>
-
 </body>
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="index.js"></script>
