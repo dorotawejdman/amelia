@@ -125,6 +125,7 @@ header h2 {
 }
 
 .room-card__description {
+  display: none;
   text-align: justify;
   line-height: 140%;
   font-size: 0.9em;
@@ -138,6 +139,10 @@ header h2 {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
+
+  margin-top: 1.2rem;
+  margin-right: 1rem;
+  transform: scale(1.1);
 }
 
 /* Utilities section */
