@@ -10,7 +10,7 @@ let imagesPerFolder = {
   Poludniowy: 9,
   Otoczenie: 7,
   Budynek: 15,
-  Widoki: 7,
+  Widoki: 8,
 };
 
 Object.keys(imagesPerFolder).forEach((folder, idKey) => {
