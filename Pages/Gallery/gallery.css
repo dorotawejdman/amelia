@@ -25,12 +25,21 @@
   margin: 0;
 }
 
+.margin-b-1 {
+  margin-bottom: 1.5rem;
+}
+
 .margin-t-1 {
   margin-top: 1.5rem;
 }
 
-.margin-b-1 {
-  margin-bottom: 1.5rem;
+@media (max-width: 750px) {
+  .margin-t-1 {
+    margin-top: 0;
+  }
+  .margin-b-1 {
+    margin-bottom: 0;
+  }
 }
 
 .tile {
@@ -238,4 +247,18 @@
 
 .lightbox-slider {
   top: 30px;
+}
+
+.lightbox-overlay button {
+  box-sizing: unset;
+  transform: scale(1.2);
+  font-size: 2.5rem;
+  height: 1.6em;
+  width: 1.6em;
+  line-height: 80%;
+}
+
+.lightbox-overlay button:focus {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
 }
