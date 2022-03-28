@@ -196,6 +196,7 @@ header h2 {
 
 #attractions-section .img-container {
   width: 100vw;
+  height: 20vw;
   display: flex;
   justify-content: space-around;
   margin-left: var(--mx-bg-neg);
