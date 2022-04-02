@@ -87,6 +87,10 @@
 }
 
 @media (max-width: 750px) {
+  .form__details {
+    width: 100%;
+  }
+
   .swiper-button {
     top: 99%;
   }
@@ -97,7 +101,6 @@
     right: 30%;
   }
   .attraction__label {
-    width: 50%;
     margin: 0.5rem 0;
   }
   .utilities-container {
@@ -119,9 +122,6 @@
     border-right: none;
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
-  .form-button-container {
-    align-self: center;
   }
   .map-responsive {
     padding-bottom: 60%;
@@ -146,7 +146,7 @@
     align-items: center;
   }
   .btn {
-    margin: 1rem 1rem 0rem 0;
+    margin: 1rem 0 0 0;
   }
 }
 
@@ -165,5 +165,8 @@
   }
   .contact-info {
     width: 90%;
+  }
+  .form-button-container {
+    align-self: center;
   }
 }

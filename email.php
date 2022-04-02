@@ -18,7 +18,7 @@
     $departureDate = $_POST['departureDate'];
     
 
-    $myMail = "dorota.wejdman@gmail.com";
+    $myMail = "amelianadgrajcarkiem@gmail.com";
     $subject = "Nowa wiadomosc od ".$email;
     $body = ""; 
     
