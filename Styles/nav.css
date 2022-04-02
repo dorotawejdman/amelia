@@ -120,8 +120,8 @@ nav {
     background-image: url(./../Assets/Icons/burger-menu.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1rem;
-    width: 1.4rem;
+    height: 1.2rem;
+    width: 1.6rem;
     margin: auto 0;
   }
 
@@ -129,11 +129,12 @@ nav {
     z-index: 1000;
     display: flex;
     position: absolute;
-    top: 41px;
+    top: 43px;
     background-color: rgba(251, 246, 243, 0.94);
     width: 100%;
     margin-left: var(--mx-sm-neg);
     backdrop-filter: blur(2px);
+    font-size: 1.2em;
   }
 
   .dropdown-open ul {
@@ -147,6 +148,7 @@ nav {
 
   .dropdown-open .nav-menu__link {
     margin: 0.5rem 0;
+    font-size: 1.3rem;
   }
 
   .nav-menu__link.active:after {
@@ -155,12 +157,6 @@ nav {
 
   .nav-menu__link.active {
     font-weight: 600;
-  }
-}
-
-@media (max-width: 400px) {
-  .dropdown-open {
-    top: 40px;
   }
 }
 

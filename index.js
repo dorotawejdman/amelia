@@ -3,6 +3,7 @@ let navLinks = document.getElementsByClassName("nav-menu__link");
 
 function subpageSelected(subpage) {
   window.sessionStorage.setItem("activeLink", subpage);
+  onMenuClick();
 }
 
 function setActiveLink(linkId) {

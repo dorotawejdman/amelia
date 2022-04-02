@@ -145,6 +145,6 @@ textarea:focus-visible {
 
 @media (max-width: 400px) {
   section {
-    padding: 4vh var(--mx-bg);
+    padding: 8vh var(--mx-bg);
   }
 }
