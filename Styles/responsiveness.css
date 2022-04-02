@@ -129,7 +129,9 @@
     margin-top: 0.8rem;
   }
   .room-card__badge {
-    margin-top: 0.5rem;
+    margin-top: 0rem;
+    font-size: 0.9em;
+    padding: 0.3rem;
   }
   header {
     text-align: center;
@@ -146,9 +148,6 @@
 }
 
 @media (max-width: 400px) {
-  .room-card__name {
-    font-size: 0.9em;
-  }
   .swiper-button {
     top: 100%;
   }
@@ -173,5 +172,8 @@
   .footer_nav-menu__link {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+  }
+  .room-card__type {
+    font-size: 0.7em;
   }
 }
