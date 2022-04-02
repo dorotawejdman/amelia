@@ -435,7 +435,7 @@
     <section id="contact-form">
       <h4 class="section-header-small">Wypełnij formularz</h4>
       <div class="form-container">
-        <form action="email.php" class="form" id="form" method="post">
+        <form action="email.php" class="form" id="form" method="POST">
           <label for="email" class="form__label">E-mail</label>
           <input type="text" name="email" class="form__input" />
           <label for="message" class="form__label">Wiadomość</label>
@@ -444,7 +444,6 @@
             <p class="form__details__header">Dodatkowe informacje</p>
             <div class="form__details__arrow" onclick="formDetailsClicked()"></div>
           </div>
-
           <div class="form__details">
             <div class="form__details__column">
               <label for="arrivalDate" class="form__label">Data przyjazdu</label>
@@ -458,7 +457,7 @@
               <input type="date" name="departureDate" class="form__input form__input-date" />
               <input type="number" name="adultsNumber" min="0" class="form__input form__input-number" />
               <input type="number" name="kidsNumber" min="0" class="form__input form__input-number" />
-              <input type="number" name="animalsNumber" min="0" class="form__input form__input-number" />
+              <input type="number" name="animalsNumber" value="-" min="0" class="form__input form__input-number" />
             </div>
           </div>
           <div class="btn-container form-button-container">
@@ -495,7 +494,7 @@
     </menu>
     <div id="rights" class="footer-rights">
       <p class="right">Ikony pochdzą z icons8.com</p>
-      <p class="right">Strona wykonana przez Wejdman</p>
+      <a href="https://www.facebook.com/101526492531093"><p class="right">Strona wykonana przez Dorota Wejdman</p></a>
       <p class="right">© AMELIA - noclegi w Szczawnicy</p>
     </div>
     <hr />

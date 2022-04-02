@@ -17,9 +17,6 @@ nav {
   font-size: 1.4rem;
 }
 
-.nav__contact-info {
-}
-
 .nav__menu ul {
   display: flex;
   flex-flow: row unwrap;

@@ -89,11 +89,7 @@ footer .contact-info__content {
 }
 
 @media (max-width: 1200px) {
-  .footer-contact-info {
-    /* justify-content: flex-start; */
-  }
   .contact-info--small {
-    /* margin-left: 1rem; */
     width: 50%;
   }
   .right {
