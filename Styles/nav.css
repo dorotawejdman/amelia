@@ -79,6 +79,14 @@ nav {
   transition: background-image 2s ease;
 }
 
+.nav-solid__link {
+  color: var(--color-text-black-light);
+}
+
+.nav-solid__header {
+  color: var(--color-text-black-light);
+}
+
 /* Responsiveness */
 @media (max-width: 1200px) {
   .nav__contact-info {
@@ -93,6 +101,11 @@ nav {
     transition: color 2s ease, background-color 2s ease;
     background-color: rgb(255, 252, 249, 0.9);
     backdrop-filter: blur(2px);
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .nav_phone-icon {
+    background-image: url(./../Assets/Icons/icons8-phone-30-black.png);
   }
 
   menu {
@@ -113,14 +126,15 @@ nav {
     background-size: cover;
     height: 1rem;
     width: 1.4rem;
+    margin: auto 0;
   }
 
   .dropdown-open {
     z-index: 1000;
     display: flex;
     position: absolute;
-    top: 3.16rem;
-    background-color: rgba(249, 246, 243, 0.94);
+    top: 41px;
+    background-color: rgba(251, 246, 243, 0.94);
     width: 100%;
     margin-left: var(--mx-sm-neg);
     backdrop-filter: blur(2px);
@@ -134,12 +148,15 @@ nav {
     width: 100%;
     margin: 1rem var(--mx-sm);
   }
+
   .dropdown-open .nav-menu__link {
     margin: 0.5rem 0;
   }
+
   .nav-menu__link.active:after {
     content: none;
   }
+
   .nav-menu__link.active {
     font-weight: 600;
   }
@@ -147,6 +164,12 @@ nav {
 
 @media (max-width: 400px) {
   .dropdown-open {
-    top: 3.12rem;
+    top: 40px;
+  }
+}
+
+@media (max-width: 300px) {
+  .nav__contact-info {
+    display: none;
   }
 }

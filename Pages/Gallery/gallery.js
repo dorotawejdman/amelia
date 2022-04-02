@@ -14,7 +14,6 @@ let imagesPerFolder = {
 };
 
 Object.keys(imagesPerFolder).forEach((folder, idKey) => {
-  console.log("." + folder);
   let containerElement = document.querySelector("#" + folder);
   for (var i = 2; i <= imagesPerFolder[folder]; i++) {
     var src = "./Assets/Images/Galeria/" + folder + "/" + i + ".JPG";

@@ -467,40 +467,11 @@
         </form>
       </div>
     </section>
-    <div style="color:transparent">
-      <?php
-      
-      use PHPMailer\PHPMailer\PHPMailer; 
-      require 'PHPMailer/src/PHPMailer.php';
-      $body = ""; 
-      $body .= "E-mail: ".$email."\r\n";
-    
-      $mail = new PHPMailer(true);         
-      $mail->isSMTP(); // using SMTP protocol                                     
-      $mail->Host = 'smtp.gmail.com'; // SMTP host as gmail 
-      $mail->SMTPAuth = true;  // enable smtp authentication                             
-      $mail->Username = 'amelia.noclegi@gmail.com';  // sender gmail host              
-      $mail->Password = 'ameliaNoclegi22'; // sender gmail host password                          
-      $mail->SMTPSecure = 'ssl';  // for encrypted connection                           
-      $mail->Port = 587;   // port for SMTP     
-    
-      $mail->setFrom('amelia.noclegi@gmail.com', "Sender"); // sender's email and name
-      $mail->addAddress('amelia.noclegi@gmail.com', "Receiver");  // receiver's email and name
-    
-      $mail->Subject = $subject;
-      $mail->Body    = $body;
-    
-      $mail->send();
-      echo 'Message has been sent';
-      echo $mail->ErrorInfo;
-    ?>
-    </div>
     <div class="map-responsive">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.0622637696633!2d20.464678316180045!3d49.426636868480365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e0429bc75667d%3A0x1ec0c3835a5395d9!2sAmelia.%20Pa%C5%82ka%20J.!5e0!3m2!1spl!2spl!4v1645602161500!5m2!1spl!2spl"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-   
   </main>
   <footer>
     <div class="footer-header">
@@ -511,15 +482,15 @@
     </div>
     <menu class="nav__menu">
       <ul>
-        <li class="nav-menu__link active"><a href="#" onclick="subpageSelected(0)">Główna</a></li>
+        <li class="footer_nav-menu__link active"><a href="#" onclick="subpageSelected(0)">Główna</a></li>
         <div class="decor"></div>
-        <li class="nav-menu__link"><a href="#rooms-section" onclick="subpageSelected(1)">Oferta</a></li>
+        <li class="footer_nav-menu__link"><a href="#rooms-section" onclick="subpageSelected(1)">Oferta</a></li>
         <div class="decor"></div>
-        <li class="nav-menu__link"><a href="gallery.html" onclick="subpageSelected(2)">Galeria</a></li>
+        <li class="footer_nav-menu__link"><a href="gallery.html" onclick="subpageSelected(2)">Galeria</a></li>
         <div class="decor"></div>
-        <li class="nav-menu__link"><a href="attractions.html" onclick="subpageSelected(3)">Atrakcje</a></li>
+        <li class="footer_nav-menu__link"><a href="attractions.html" onclick="subpageSelected(3)">Atrakcje</a></li>
         <div class="decor"></div>
-        <li class="nav-menu__link"><a href="#contact-section" onclick="subpageSelected(4)">Kontakt</a></li>
+        <li class="footer_nav-menu__link"><a href="#contact-section" onclick="subpageSelected(4)">Kontakt</a></li>
       </ul>
     </menu>
     <div id="rights" class="footer-rights">

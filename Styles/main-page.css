@@ -46,7 +46,7 @@
   height: 100%;
 }
 
-header {
+main header {
   margin-bottom: 1rem;
 }
 
@@ -91,7 +91,7 @@ header h2 {
 }
 
 .room-card-text-container {
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   position: relative;
 }
 
