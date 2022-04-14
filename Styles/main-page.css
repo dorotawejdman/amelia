@@ -195,6 +195,7 @@ header h2 {
 .utility__description {
   margin-top: 0.8rem;
   font-size: 0.9rem;
+  line-height: 140%;
 }
 
 /* Attractions section */
