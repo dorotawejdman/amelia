@@ -9,7 +9,7 @@ let imagesPerFolder = {
   Zachodni: 11,
   Poludniowy: 9,
   Otoczenie: 7,
-  Budynek: 15,
+  Budynek: 11,
   Widoki: 8,
 };
 
