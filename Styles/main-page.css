@@ -67,7 +67,7 @@ header h2 {
   transform: translateX(-50%);
 }
 .showcase__arrow:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) translateX(-50%);
   transition: transform 1s ease;
 }
 /* Rooms section */
