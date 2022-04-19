@@ -9,6 +9,17 @@
     if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
     {
 
+      
+    $headers = "Reply-To: The Sender <amelianadgrajcarkiem@gmail.com>\r\n";
+    $headers .= "Return-Path: The Sender <amelianadgrajcarkiem@gmail.com>\r\n";
+    $headers .= "From: The Sender <amelianadgrajcarkiem@gmail.com>\r\n";
+    
+    $headers .= "Organization: Amelia\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
+    $headers .= "X-Priority: 3\r\n";
+    $headers .= "X-Mailer: PHP". phpversion() ."\r\n";
+
     $email = $_POST['email'];
     $message = $_POST['message'];
     $adultsNumber = $_POST['adultsNumber'];
@@ -30,7 +41,7 @@
     $body .= "Liczba dzieci: ".$kidsNumber."\r\n";
     $body .= "Liczba zwierząt: ".$animalsNumber."\r\n";
     
-    $success = mail($myMail,$subject,$body);
+    $success = mail($myMail, $subject, $body, $headers);
 
     $message_send = true;
 
